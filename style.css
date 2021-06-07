@@ -72,11 +72,12 @@ img {
 
 
 img.emoji {
+    display: inline-block;
     align-self: center;
     margin: 0 10px;
     bottom: 0;
-    width:100px;
-    height: 100px;
+    width:1.5em;
+    height: 1.5em;
 }
 
 
