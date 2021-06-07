@@ -1,16 +1,22 @@
-const landingPage = document.getElementsByClassName("landingPage")[0];
-
-//const hiLanding = landingPage.getElementsByClassName("text")[0];
-
-
-landingPage.style.height = window.innerHeight + "px";
-
-landingPage.style.color = "#000";
+const landingPage = document.querySelector(".landingPage");
 
 
 
-document.addEventListener("resize",function(){
-    
-landingPage.style.height = window.innerHeight + "px";
+
+let setHeight = () => {
+    if (window.innerWidth > 500) {
+        landingPage.style.height = window.innerHeight + "px";
+    } else {
+        landingPage.style.minHeight = window.innerHeight + "px";
+        landingPage.style.height = "auto";
+    }
+
+}
+
+setHeight();
+
+document.addEventListener("resize", function () {
+
+    setHeight();
 
 })
