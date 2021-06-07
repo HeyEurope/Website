@@ -103,9 +103,10 @@ img.emoji {
 
 
 .landingPage .left{
-    display: inline-block;
-    flex: 1 0 50%;
+    display: flex;
+    flex: 1 0 49%;
     height: auto;
+    flex-wrap: wrap;
 
 }
 
