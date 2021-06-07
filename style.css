@@ -107,7 +107,7 @@ img.emoji {
     flex: 1 0 49%;
     height: auto;
     flex-wrap: wrap;
-
+ -webkit-box-decoration-break: clone;
 }
 
 .landingPage .right {
@@ -135,7 +135,6 @@ flex: 1 0 49%;
     line-height: normal;
     /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
   background: -webkit-linear-gradient(0deg, #27fb6b  40%,  #00b4d8 60%);
-    -webkit-box-decoration-break: clone;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
