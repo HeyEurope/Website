@@ -44,14 +44,14 @@ img {
     position: relative;
     padding: 0 2%;
     width: 96%;
-    background: rgb(0,180,216);
-    background: -moz-linear-gradient(270deg, rgba(0,180,216,1) 0%, rgba(39,251,107,1) 100%);
-    background: -webkit-linear-gradient(270deg, rgba(0,180,216,1) 0%, rgba(39,251,107,1) 100%);
-    background: linear-gradient(270deg, rgba(0,180,216,1) 0%, rgba(39,251,107,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00b4d8",endColorstr="#27fb6b",GradientType=1);
+    background: rgb(17, 41, 107);
+    background: -moz-linear-gradient(270deg, rgba(17, 41, 107) 0%, rgba(0, 180, 216,1) 100%);
+    background: -webkit-linear-gradient(270deg, rgba(17, 41, 107) 0%, rgba(0, 180, 216,1) 100%);
+    background: linear-gradient(270deg, rgba(17, 41, 107,1) 0%, rgba(0, 180, 216,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#11296B",endColorstr="#00B4D8",GradientType=1);
     background-size: 400% 400%;
     text-align: center;
-    animation: spread-color 5s ease infinite;
+    animation: spread-color 10s ease infinite;
     z-index: 2;
 }
 
