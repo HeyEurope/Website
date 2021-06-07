@@ -4,7 +4,7 @@ html{
 
 body {
 
-    background: #000;
+    background: #fafafa;
     margin: 0 0;
     margin-top: 0;
     width: 100%;
@@ -40,23 +40,24 @@ img {
 }
 
 .landingPage {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     position: relative;
     padding: 0 2%;
     width: 96%;
-    background: rgb(17, 41, 107);
-    background: -moz-linear-gradient(270deg, rgba(17, 41, 107) 0%, rgba(0, 180, 216,1) 100%);
+    background: #fafafa;
+    padding-top: 100px;
+    /* background: -moz-linear-gradient(270deg, rgba(17, 41, 107) 0%, rgba(0, 180, 216,1) 100%);
     background: -webkit-linear-gradient(270deg, rgba(17, 41, 107) 0%, rgba(0, 180, 216,1) 100%);
     background: linear-gradient(270deg, rgba(17, 41, 107,1) 0%, rgba(0, 180, 216,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#11296B",endColorstr="#00B4D8",GradientType=1);
-    background-size: 400% 400%;
-    text-align: center;
-    /* animation: spread-color 10s ease infinite; */
-    background-position: 50% 0%;
-    z-index: 2;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#11296B",endColorstr="#00B4D8",GradientType=1); */
+
+
 }
 
-@keyframes spread-color {
+/* @keyframes spread-color {
     0%{
         background-position: 50% 0% ;
 
@@ -68,7 +69,7 @@ img {
         background-position:  50% 0%;
     }
     
-}
+} */
 
 
 
@@ -99,14 +100,22 @@ img.emoji {
      transition: 0.5s all;
 }
 
-.signup button:hover {
-    background: #000;
-    color: rgba(0,180,216,1);
-    border: 5px dashed rgb(0,180,216);
-/* background: -moz-linear-gradient(270deg, rgba(0,180,216,1) 0%, rgba(39,251,107,1) 100%);
-background: -webkit-linear-gradient(270deg, rgba(0,180,216,1) 0%, rgba(39,251,107,1) 100%);
-background: linear-gradient(270deg, rgba(0,180,216,1) 0%, rgba(39,251,107,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00b4d8",endColorstr="#27fb6b",GradientType=1); */
+
+
+.landingPage .left{
+    display: inline-block;
+    flex: 1 0 50%;
+    height: auto;
+
+}
+
+.landingPage .right {
+    display: flex;
+flex: 1 0 49%;
+    height:  auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
 }
 
 
@@ -118,21 +127,25 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00b4d8",endCo
     margin: 0;
     left: 0%;
     top: 0%;
+    width: 100%;
     padding-top: 50px;
-    min-height: 40%;
-    font-size: 10vw;
-    color: #000;
+    font-size: 100px;
     font-weight: 900;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    height: 50%;
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+  background: -webkit-linear-gradient(0deg, #27fb6b  40%,  #00b4d8 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.landingPage .coming-soon {
-    display: block;
-    min-height: 15%;
-    font-size: 1vw;
-    padding-bottom: 50px;
-}
 
+
+
+
+.landingPage .landing-image {
+    height: auto;
+    width: 100%;
+}
 
 
 
@@ -185,6 +198,22 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00b4d8",endCo
     background: rgba(39,251,107,1);
 }
 
+ #soonPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2%;
+}
+
+#soonPage .coming-soon {
+    display: block;
+    min-height: 15%;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+
+
 footer {
     display: flex;
     align-items: center;
@@ -195,5 +224,5 @@ footer {
     width: 100%;
     font-weight: 900;
     text-align: center;
-    color: rgb(17, 41, 107);
+    color: rgb(0,180,216);
 }
