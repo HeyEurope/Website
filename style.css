@@ -4,7 +4,7 @@ html{
 
 body {
 
-    background: rgba(0,180,216,1);
+    background: #000;
     margin: 0 0;
     margin-top: 0;
     width: 100%;
@@ -194,4 +194,5 @@ footer {
     width: 100%;
     font-weight: 900;
     text-align: center;
+    color: rgb(17, 41, 107);
 }
