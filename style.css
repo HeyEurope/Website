@@ -51,20 +51,21 @@ img {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#11296B",endColorstr="#00B4D8",GradientType=1);
     background-size: 400% 400%;
     text-align: center;
-    animation: spread-color 10s ease infinite;
+    /* animation: spread-color 10s ease infinite; */
+    background-position: 50% 0%;
     z-index: 2;
 }
 
 @keyframes spread-color {
     0%{
-        background-position: 0% 50%;
+        background-position: 50% 0% ;
 
     }
     50%{
-        background-position: 100% 50%;
+        background-position:  50% 100%;
     }
     100%{
-        background-position: 0% 50%;
+        background-position:  50% 0%;
     }
     
 }
