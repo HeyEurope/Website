@@ -1,5 +1,6 @@
 const landingPage = document.querySelector(".landingPage");
 
+const header = document.querySelector("header");
 
 
 
@@ -19,4 +20,12 @@ document.addEventListener("resize", function () {
 
     setHeight();
 
+})
+
+document.addEventListener("scroll", function () {
+    if (window.scrollY > 10) {
+        header.style.background = "#fafafaea";
+    } else {
+        header.style.background = "transparent";
+    }
 })

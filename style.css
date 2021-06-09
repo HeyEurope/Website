@@ -14,14 +14,44 @@ body {
 }
 
 header {
-    display: none; 
+    display: flex; 
+    align-items: center;
     position: fixed;
     z-index: 100;
     height: 50px;
     top: 0px;
     left: 0px;
-    width: 100%;
    background: transparent;
+   width: 100%;
+   
+  
+   font-size: 30px;
+   padding: 0px 20px;
+   transition: 0.5s all;
+}
+header .headerLogo {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    display: inline;
+    position: relative;
+    left: 0;
+    height: 50px;
+    width: auto;
+    padding: 0 10px;
+}
+
+header .headerLogo h1 {
+    display: inline;
+    font-weight: 800;
+    background: -webkit-linear-gradient(0deg, #27fb6b  40%,  #00b4d8 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: 0px 0px 100px #27fb6a5e;
+  line-height: 50px;
 }
 
 button {
@@ -54,7 +84,7 @@ img {
     background: -webkit-linear-gradient(270deg, rgba(17, 41, 107) 0%, rgba(0, 180, 216,1) 100%);
     background: linear-gradient(270deg, rgba(17, 41, 107,1) 0%, rgba(0, 180, 216,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#11296B",endColorstr="#00B4D8",GradientType=1); */
-    box-shadow: 0px 0px 1000px 10px inset #00b4d823;
+    box-shadow: -100px 0px 1000px 100px inset #00b4d811, 100px 0px 1000px 100px inset #27fb6a15;
 
 }
 
@@ -215,6 +245,7 @@ flex: 1 0 49%;
     align-items: center;
     padding: 0 2%;
     box-shadow: 0px 0px 1000px 10px inset #00b4d823;
+    box-shadow: -100px 0px 1000px 100px inset #00b4d811, 100px 0px 1000px 100px inset #27fb6a15;
 }
 
 #soonPage .coming-soon {
