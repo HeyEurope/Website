@@ -72,31 +72,33 @@ img {
     min-height: 600px;
     height: auto;
     box-shadow: -100px 0px 1000px 100px inset #00b4d811, 100px 0px 1000px 100px inset #27fb6a15;
-    padding: 0px 80px;
+    padding: 50px 80px;
     font-size: 25px;
-    
+
 }
 
 .section h1 {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     flex: 0 0 100%;
     height: 200px;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 900;
 
 }
 
 .section h1::after {
     content: "";
-    display: inline-block;
+    display: flex;
     width: 100%;
     height: 10px;
     background-color: #00b4d8;
     position: relative;
     left:0px;
-    bottom:0px;
-
+    top:0px;
+    margin: 15px 0;
 }
 
 
@@ -149,6 +151,11 @@ flex: 1 0 49%;
     align-items: center;
     justify-content: center;
     padding: 0 10px;
+}
+
+.right img {
+    height: auto;
+    width: 80%;
 }
 
 
@@ -245,14 +252,16 @@ flex: 1 0 49%;
     box-shadow: -100px 0px 1000px 100px inset #00b4d811, 100px 0px 1000px 100px inset #27fb6a15;
 }
 
-#soonPage .coming-soon {
-    display: block;
-    min-height: 15%;
-    font-size: 30px;
-    padding-bottom: 50px;
+#soonPage .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 50px;
     font-weight: 700;
-    line-height: 1.3em;
 }
+
+
 
 
 
