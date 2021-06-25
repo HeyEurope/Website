@@ -36,7 +36,7 @@ document.addEventListener("resize", function () {
 
 document.addEventListener("scroll", function () {
     if (window.scrollY > 10) {
-        header.style.background = "#fafafaea";
+        header.style.background = "#11296B";
     } else {
         header.style.background = "transparent";
     }
