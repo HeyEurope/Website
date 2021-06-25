@@ -37,7 +37,9 @@ document.addEventListener("resize", function () {
 document.addEventListener("scroll", function () {
     if (window.scrollY > 10) {
         header.style.background = "#11296B";
+        header.style.boxShadow = "0px 0px 50px 1px #000";
     } else {
         header.style.background = "transparent";
+        header.style.boxShadow = "none";
     }
 })
