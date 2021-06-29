@@ -4,7 +4,11 @@ const sections = document.getElementsByClassName("section");
 
 const header = document.querySelector("header");
 
+const introPage = document.getElementById("intro");
 
+const introLi = introPage.getElementsByTagName("li");
+
+console.log(introLi);
 
 let setHeight = () => {
     if (window.innerWidth > 500) {
@@ -42,4 +46,54 @@ document.addEventListener("scroll", function () {
         header.style.background = "transparent";
         header.style.boxShadow = "none";
     }
+})
+
+
+const paddingSize = 100;
+
+const actionsToggled = "restart pause pause pause";
+
+gsap.to(introLi[0],{
+    scrollTrigger: {
+        trigger: introLi[0],
+        // scrub: 0.5,
+        // start: "top center",
+        // end: "center center",
+        toggleActions: actionsToggled,
+    },
+    paddingBottom: paddingSize,
+    duration: 1,
+})
+gsap.to(introLi[1],{
+    scrollTrigger: {
+        trigger: introLi[1],
+        // scrub: 0.5,
+        // start: "top center",
+        // end: "center center",
+        toggleActions: actionsToggled,
+    },
+    paddingTop: paddingSize,
+    duration: 1,
+})
+gsap.to(introLi[2],{
+    scrollTrigger: {
+        trigger: introLi[2],
+        // scrub: 0.5,
+        // start: "top center",
+        // end: "center center",
+        toggleActions: actionsToggled,
+    },
+    paddingBottom: paddingSize,
+    duration: 1,
+})
+gsap.to(introLi[3],{
+    scrollTrigger: {
+        trigger: introLi[3],
+        // scrub: 0.5,
+        // start: "top center",
+        // end: "center center",
+        toggleActions: actionsToggled,
+    },
+    paddingTop: paddingSize,
+    duration: 1,
 })
