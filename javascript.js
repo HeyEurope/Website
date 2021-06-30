@@ -40,7 +40,7 @@ document.addEventListener("resize", function () {
 
 document.addEventListener("scroll", function () {
     if (window.scrollY > 10) {
-        header.style.background = "#11296B";
+        header.style.background = "#001c3aff";
         header.style.boxShadow = "0px 0px 50px 1px #000";
     } else {
         header.style.background = "transparent";
@@ -49,11 +49,11 @@ document.addEventListener("scroll", function () {
 })
 
 
-const paddingSize = 100;
+const paddingSize = 50;
 
 const actionsToggled = "restart pause pause pause";
 
-gsap.to(introLi[0],{
+gsap.to(introLi[0], {
     scrollTrigger: {
         trigger: introLi[0],
         // scrub: 0.5,
@@ -61,10 +61,10 @@ gsap.to(introLi[0],{
         // end: "center center",
         toggleActions: actionsToggled,
     },
-    paddingBottom: paddingSize,
+    y: paddingSize,
     duration: 1,
 })
-gsap.to(introLi[1],{
+gsap.to(introLi[1], {
     scrollTrigger: {
         trigger: introLi[1],
         // scrub: 0.5,
@@ -72,10 +72,10 @@ gsap.to(introLi[1],{
         // end: "center center",
         toggleActions: actionsToggled,
     },
-    paddingTop: paddingSize,
+    y: -paddingSize,
     duration: 1,
 })
-gsap.to(introLi[2],{
+gsap.to(introLi[2], {
     scrollTrigger: {
         trigger: introLi[2],
         // scrub: 0.5,
@@ -83,10 +83,10 @@ gsap.to(introLi[2],{
         // end: "center center",
         toggleActions: actionsToggled,
     },
-    paddingBottom: paddingSize,
+    y: paddingSize,
     duration: 1,
 })
-gsap.to(introLi[3],{
+gsap.to(introLi[3], {
     scrollTrigger: {
         trigger: introLi[3],
         // scrub: 0.5,
@@ -94,6 +94,6 @@ gsap.to(introLi[3],{
         // end: "center center",
         toggleActions: actionsToggled,
     },
-    paddingTop: paddingSize,
+    y: -paddingSize,
     duration: 1,
 })
