@@ -91,7 +91,7 @@ button {
 }
 
 img {
-    width: 300px;
+    width: 240px;
 }
 
 .section {
@@ -155,7 +155,7 @@ img {
     background: linear-gradient(270deg, rgba(17, 41, 107,1) 0%, rgba(0, 180, 216,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#11296B",endColorstr="#00B4D8",GradientType=1); */
     box-shadow: -100px 0px 1000px 100px inset #00b4d80a, 100px 0px 1000px 100px inset #27fb6a0e;
-    z-index: 1;
+    z-index: 10;
 }
 
 .landingPage .background-box {
@@ -302,10 +302,10 @@ flex: 1 0 49%;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    flex: 0 0 100px;
-    min-height: 500px;
+    flex: 0 0 50px;
+    min-height: 300px;
     height: auto;
- margin-bottom: 50px;
+ margin-bottom: 40px;
  padding: 15px;
  border-right: 1px solid #aaa;
  background: #001c3aff;
@@ -314,7 +314,7 @@ flex: 1 0 49%;
 }
 
 .pillar {
-    width: 100px;
+    width: 80px;
     height: auto;
 }
 /* #intro li:nth-child(1){
@@ -343,13 +343,13 @@ flex: 1 0 49%;
 
 #intro li h3{
     margin-bottom: 80px;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600;
 }
 
 #intro li p {
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #wherenow {
@@ -372,12 +372,18 @@ flex: 0 0 40%;
 #wherenow .project-stages {
     flex: 0 0 100%;
     border-radius: 10px;
-    height: 400px;
+    height: 200px;
     margin-top:100px;
     padding: 15px;
     box-shadow: 0px 0px 20px 1px #aaa;
 }
 
+#inspiring {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
 
 #inspiring .quotation-mark {
     height: 150px;
@@ -395,11 +401,12 @@ flex: 0 0 40%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    flex: 0 0 300px;
-    height: 300px;
+    flex: 0 0 200px;
+    height: 200px;
     box-shadow: 0px 0px 20px 1px #aaa;
     border-radius: 10px;
     padding: 20px;
+    margin: 50px 0;
 }
 
 #thecommunity .joinSocial h3{
@@ -411,7 +418,13 @@ flex: 0 0 40%;
 #thecommunity .joinSocial i{
     text-align: center;
     flex: 0 0 100%;
-    font-size: 90px;
+    font-size: 72px;
+    margin: 10px 0;
+}
+#thecommunity .joinSocial p{
+    
+    font-size: 16px;
+    margin: 10px 0;
 
 }
 
@@ -419,6 +432,7 @@ flex: 0 0 40%;
     height: 50px;
     flex: 0 0 50%;
     background: #27fb6b;
+    margin: 10px 0;
 }
 
 
