@@ -526,7 +526,12 @@ font-size: 18px;
 }
 
 
+#missionPage button:hover {
+    background: #00b4d8;
+    font-size: 70px;
+    box-shadow: 0 5px 10px 1px #444;
 
+}
 
 
  #soonPage {
