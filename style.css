@@ -28,7 +28,7 @@ header {
    font-size: 30px;
    padding: 0px 20px;
    transition: 0.5s all;
-   box-shadow: none;
+   box-shadow: -100px 0px 1000px 100px inset #00b4d80a, 100px 0px 1000px 100px inset #27fb6a0e;
 }
 header .headerLogo {
     display: flex;
@@ -49,7 +49,7 @@ header img {
 header .headerLogo h1 {
     display: inline;
     font-weight: 800;
-    background: -webkit-linear-gradient(0deg, #27fb6b  20%,  #00b4d8 80%);
+    background: -webkit-linear-gradient(0deg, #001c3aff  0%,  #00b4d8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -58,20 +58,47 @@ header .headerLogo h1 {
 }
 
 header .headerSections {
-    flex: 0 0 40%;
+    flex: 0 0 0%;
 
 }
 
 header .headerSocials {
     display: flex;
-    flex: 0 0 10%;
-    justify-content: space-evenly;
+    flex: 1 0 10%;
+    justify-content: flex-end;
     align-items: center;
+    margin-right: 20px;
 }
+
+header .headerSocials button {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    border: 2px solid #001c3aff;
+}
+header .headerSocials button:hover {
+
+    height: 30px;
+    font-size: 15px;
+    color: #00b4d8;
+    border: 2px solid #00b4d8;
+}
+
+
 
 header .headerSocials a {
     text-decoration: none;
-    color: #27fb6b;
+    color: #001c3aff;
+    margin-right: 15px;
+}
+
+header .headerSocials a:hover {
+
+    color: #00b4d8;
+
 }
 
 
@@ -86,7 +113,7 @@ button {
     border-radius: 20px;
     background: transparent;
     border: 1px solid black;
-    padding: 0px 20px 0px 20px;
+    padding: 10px 20px 10px 20px;
     cursor: pointer;
 }
 
@@ -188,7 +215,7 @@ img.emoji {
 
 .section .left{
     display: flex;
-    flex: 1 0 49%;
+    flex: 1 0 60%;
     height: auto;
     flex-wrap: wrap;
  
@@ -198,11 +225,11 @@ img.emoji {
 
 .section .right {
     display: flex;
-flex: 1 0 49%;
+flex: 1 0 39%;
     height:  auto;
     align-items: center;
     justify-content: center;
-    padding: 0 10px;
+    padding: 0 0px;
     flex-wrap: wrap;
 }
 
@@ -215,7 +242,7 @@ flex: 1 0 49%;
 .landingPage h1 {
     
     display: inline;
- text-align: left;
+ text-align: center;
     position: relative;
     margin: 0;
     left: 0%;
@@ -228,12 +255,16 @@ flex: 1 0 49%;
     /* height: 50%; */
     line-height: normal;
     /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
-  background: -webkit-linear-gradient(0deg, #27fb6b  40%,  #00b4d8 60%);
+  background: -webkit-linear-gradient(0deg, #001c3aff  0%,  #00b4d8 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   text-shadow: 0px 0px 100px #27fb6a5e;
   
+}
+
+.landingPage h1::after {
+    display: none;
 }
 
 
@@ -250,6 +281,10 @@ flex: 1 0 49%;
 
 .elaborate {
     background: rgba(39,251,107,1);
+}
+
+#thegoal ul {
+    list-style: disc;
 }
 
 #pre-intro {
