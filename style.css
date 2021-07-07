@@ -67,7 +67,7 @@ header .headerSocials {
     flex: 1 0 10%;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 
 header .headerSocials button {
@@ -93,6 +93,9 @@ header .headerSocials a {
     text-decoration: none;
     color: #001c3aff;
     margin-right: 15px;
+    /* height: 60px;
+    width: 60px;
+    font-size: 50px; */
 }
 
 header .headerSocials a:hover {
@@ -130,6 +133,7 @@ img {
     padding: 50px 80px;
     font-size: 25px;
     z-index: 1;
+    /* width: 100%; */
 }
 
 .section:nth-child(2n){
@@ -462,7 +466,7 @@ flex: 0 0 40%;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    flex: 0 0 200px;
+    flex: 0 0 400px;
     min-height: 300px;
     height: auto;
  margin-bottom: 40px;
