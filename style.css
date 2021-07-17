@@ -336,6 +336,20 @@ flex: 1 0 39%;
     /* box-shadow: 0px 0px 50px 1px #000; */
 }
     
+#thegoal {
+    padding: 50px 0;
+
+}
+
+#thegoal h1,h2 {
+    padding: 0 80px;
+    box-sizing: border-box;
+}
+
+#thegoal>p {
+    padding: 0 80px;
+    box-sizing: border-box;
+}
 
 #thegoal #goals-carousel {
         /* display:flex;
@@ -345,15 +359,43 @@ flex: 1 0 39%;
         /* box-shadow: 0px 0px 100px 1px #aaa; */
         /* display: flex;
         flex: 0 0 100%; */
-        display: block;
+        display: flex;
         width: 100%;
-        height: 700px;
-        border-radius: 10px;
+        left: 0px;
         color: #fafafa;
         height: 500px;
+        box-sizing: border-box;
+        overflow: hidden;
+        align-items: flex-start;
+    }
 
+
+
+    #goals-carousel .slick-next::before {
+        display: none;
+        content:"\203A";
+        color: var(--ic-blue);
+        position: absolute;
+        left: 0px;
+        top: -150px;
+        font-size: 200px;
+        z-index: 100;
+        animation: cubic-bezier(0.175, 0.885, 0.32, 1.275) 4s lead-buttons-left infinite;
     }
     
+    #goals-carousel .slick-prev::before {
+        display: none;
+        content:"\2039";
+        position: absolute;
+        color: var(--ic-blue);
+        right: 0px;
+        top: -150px;
+        font-size: 200px;
+        z-index: 100;
+        animation: cubic-bezier(0.175, 0.885, 0.32, 1.275) 4s lead-buttons-right infinite;
+    }
+
+
 #thegoal .slick-slide{
         /* display: flex;
         justify-content: center;
@@ -374,7 +416,7 @@ flex-wrap: wrap;
      border-right: 1px solid #aaa;
      background: #001c3aff;
      border-radius: 10px;
-     box-shadow: 0px 0px 40px 10px #aaa;
+     box-shadow: 0px 0px 40px 10px #00b4d823;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.5em;
@@ -391,6 +433,8 @@ flex-wrap: wrap;
     flex: 0 1 50%;
     font-size: 15px;
     opacity: 0.8;
+    padding-left: 7px;
+    box-sizing: border-box;
 }
 
 #thegoal div img {
@@ -487,9 +531,6 @@ flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
-#wherenow .left, #wherenow .right{
-flex: 0 0 40%;
-}
 
 #wherenow .timeline {
     flex: 0 0 1%;
@@ -499,12 +540,86 @@ flex: 0 0 40%;
 
 
 #wherenow .project-stages {
-    flex: 0 0 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 0 0 40%;
     border-radius: 10px;
-    height: 200px;
+    border: 1px solid #00b4d8;
+    min-height: 300px;
+    height: auto;
     margin-top:100px;
-    padding: 15px;
+    padding: 30px;
     box-shadow: 0px 0px 20px 1px #aaa;
+    line-height: 1.1em;
+    color: #001c3aaa;
+}
+
+#wherenow .layers {
+    display: flex;
+    flex: 0 0 100%;
+        height:  auto;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0 0px;
+        flex-wrap: wrap;
+}
+
+#wherenow .layers>div:nth-last-child(1) {
+    margin-top: 250px;
+}
+
+.project-stages h3 {
+    flex: 0 0 100%;
+    font-weight: 700;
+    color: #001c3aff;
+    font-size: 30px;
+    padding-bottom: 8px;
+}
+
+.project-stages p {
+    flex: 0 0 49%;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.project-stages .project-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50%;
+    font-weight: 500;
+    font-size: 50px;
+
+    box-sizing: border-box;
+
+}
+
+.project-stages .project-image i {
+
+    margin-left: 20px;
+}
+
+.project-stages .project-image i:nth-child(2n) {
+    margin-top: 20px;
+
+}
+
+.project-stages img {
+    height: 160px;
+    width: auto;
+    border-radius: 10px;
+}
+
+
+.project-stages h4 {
+    flex:0 0 100%;
+    font-weight: 500;
+    flex: 0 0 100%;
+    text-align:center;
+    margin-top:40px;
+    color:#aaaaaaaa;
+    font-size: 18px;
 }
 
 #inspiring {
@@ -586,14 +701,17 @@ line-height: 1.5em;
 
 #thecommunity .joinSocial {
     display: flex;
+    position: relative;
     justify-content: center;
     flex-wrap: wrap;
-    flex: 0 0 200px;
-    height: 200px;
+    flex: 0 0 300px;
+    height: 300px;
     box-shadow: 0px 0px 20px 1px #aaa;
     border-radius: 10px;
-    padding: 20px;
+    padding: 40px;
     margin: 50px 0;
+    box-sizing: border-box;
+    transition: 0.5 all;
 }
 
 #thecommunity .joinSocial h3{
@@ -612,15 +730,57 @@ line-height: 1.5em;
     
     font-size: 16px;
     margin: 10px 0;
-
+    line-height: 1.5em;
+    color:rgba(170, 170, 170, 0.493);
 }
+
+#thecommunity .joinSocial .blur{
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   filter:blur(1px);
+    background: #001c3aaa;
+   top: 0px;
+   left: 0px;
+   border-radius: 10px;
+   transition: 0.5s all;
+   opacity: 0;
+}
+
 
 #thecommunity .joinSocial button{
+    display: block;
+    position: absolute;
+    top: 90px;
     height: 50px;
-    flex: 0 0 50%;
+    width: 80%;
     background: #27fb6b;
     margin: 10px 0;
+    transition: 0.5s all;
+    opacity: 0;
 }
+
+#thecommunity .joinSocial:hover{
+
+    cursor: pointer;
+    opacity: 1;
+}
+
+#thecommunity .joinSocial:hover button, .joinSocial:hover .blur{
+    display: block;
+    background: #27fb6b;
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+#thecommunity .joinSocial:hover .blur{
+    display: block;
+    opacity: 1;
+
+}
+
 
 
 #missionPage button:hover {
@@ -667,7 +827,7 @@ footer {
     text-align: center;
     color: #777;
     box-shadow: 0px 0px 1000px 10px inset #00b4d823;
-    background: #000;
+    background: #fafafa;
     height: 400px;
     z-index: -1;
 }
