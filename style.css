@@ -661,8 +661,8 @@ flex-wrap: wrap;
     /* box-shadow: 0px 0px 100px 1px #aaa; */
     border-radius: 10px;
     
-    color: #fafafa;
-    min-height: 700px;
+    color: #001c3aff;
+    min-height: 300px;
     height: auto;
 }
 
@@ -678,21 +678,25 @@ flex-wrap: wrap;
  margin-bottom: 40px;
  padding: 15px;
  border-right: 1px solid #aaa;
- background: #001c3aff;
- border-radius: 10px;
- box-shadow: 0px 0px 40px 10px #aaa;
-font-size: 18px;
+ border-radius: 0px;
+ /* box-shadow: 0px 0px 40px 10px #aaa; */
+font-size: 16px;
 font-weight: 500;
 line-height: 1.5em;
+color: #001c3aaa;
 }
 
+#theapp li:nth-last-child(1){
+    border: none;
+}
 
 #theapp li em {
     display: block;
     text-align: left;
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 10px;
     font-size: 25px;
+    color: #001c3aff;
 }
 
 #thecommunity {
