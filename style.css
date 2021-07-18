@@ -23,6 +23,67 @@ body {
 
 }
 
+
+
+.box-overlay {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: -100px;
+    left:0px;
+    justify-content: center;
+    height: auto;
+    
+    z-index: 10;
+}
+.box-overlay div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background:#fafafa;
+    color: #001c3aaa;
+    height: 100%;
+    width: 50%;
+    line-height: 1.5em;
+    padding: 20px;
+    box-shadow: 0px 0px 40px 1px #aaa, -1px 0px 10px 1000px inset #00b4d80a, 1px 0px 10px 1000px inset #27fb6a0e;;
+}
+
+.box-overlay div h3{
+    color: #001c3a;
+    text-align: left;
+    font-size: 30px;
+    font-weight: 900;
+    flex: 0 0 100%;
+}
+.box-overlay div h3::after{
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: #00b4d8;
+}
+
+.box-overlay div ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;   
+    font-size: 20px;
+    font-weight: 500;   
+width: 200px;
+justify-content: center;
+}
+.box-overlay div ul li{
+    width: 200px;
+    text-align: left;
+}
+
+
+.box-overlay i {
+    padding-right: 10px;
+}
+
 header {
     display: flex; 
     align-items: space-between;
@@ -136,13 +197,13 @@ img {
 
 .section {
     display: flex;
+    position: relative;
     flex-wrap: wrap;
     min-height: 600px;
     height: auto;
     box-shadow: -100px 0px 1000px 100px inset #00b4d80a, 100px 0px 1000px 100px inset #27fb6a0e;
     padding: 50px 80px;
     font-size: 25px;
-    z-index: 1;
     /* width: 100%; */
 }
 
@@ -317,10 +378,23 @@ flex: 1 0 39%;
 #pre-intro {
     position: relative;
     z-index: 2;
+    justify-content: center;
 }
 #pre-intro q{
+    text-align: left;
     z-index: 3;
-    text-shadow: 0px 0px 5px rgba(170, 170, 170, 0.493);
+    /* text-shadow: 0px 0px 5px rgba(170, 170, 170, 0.393); */
+    line-height: 2em;
+}
+
+#pre-intro q p{
+    flex: 0 0 100%;
+    color:#efefef;
+  }
+
+#pre-intro q i{
+  padding-right: 10px;
+  color: #fafafa;
 }
 
 #pre-intro .rotated-box {
@@ -330,7 +404,7 @@ flex: 1 0 39%;
     height: 800px;
     top: 0px;
     left: 0px;
-    background: #27fb6b;
+    background: #27fb6b55;
     transform: rotate(-50deg);
     z-index: 2;
     /* box-shadow: 0px 0px 50px 1px #000; */
@@ -482,7 +556,7 @@ flex-wrap: wrap;
  border-right: 1px solid #aaa;
  background: #001c3aff;
  border-radius: 10px;
- box-shadow: 0px 0px 40px 10px #aaa;
+ box-shadow: 0px 0px 40px 5px #aaa;
 }
 
 .pillar {
@@ -658,6 +732,7 @@ flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-direction: row;
     /* box-shadow: 0px 0px 100px 1px #aaa; */
     border-radius: 10px;
     
@@ -672,7 +747,7 @@ flex-wrap: wrap;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    flex: 0 0 400px;
+    flex: 0 0 300px;
     min-height: 300px;
     height: auto;
  margin-bottom: 40px;
@@ -735,7 +810,7 @@ color: #001c3aaa;
     font-size: 16px;
     margin: 10px 0;
     line-height: 1.5em;
-    color:rgba(170, 170, 170, 0.493);
+    color:rgba(170, 170, 170, 0.893);
 }
 
 #thecommunity .joinSocial .blur{
@@ -785,7 +860,9 @@ color: #001c3aaa;
 
 }
 
-
+#missionPage {
+    margin-bottom: 400px;
+}
 
 #missionPage button:hover {
     background: #00b4d8;
@@ -829,9 +906,9 @@ footer {
     width: 100%;
     font-weight: 900;
     text-align: center;
-    color: #777;
+    color: #fafafaaa;
     box-shadow: 0px 0px 1000px 10px inset #00b4d823;
-    background: #fafafa;
+    background: #001c3a;
     height: 400px;
     z-index: -1;
 }
