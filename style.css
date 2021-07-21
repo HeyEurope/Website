@@ -23,18 +23,26 @@ body {
 
 }
 
+body a {
+
+        color: #00b4d8;
+        background-color: transparent;
+        text-decoration: none;
+
+}
 
 
 .box-overlay {
     display: flex;
     width: 100%;
     position: absolute;
-    bottom: -100px;
+    bottom: -200px;
     left:0px;
     justify-content: center;
     height: auto;
     
     z-index: 10;
+    box-sizing: border-box;
 }
 .box-overlay div {
     display: flex;
@@ -100,6 +108,7 @@ header {
    padding: 0px 20px;
    transition: 0.5s all;
    box-shadow: none;
+   
 }
 header .headerLogo {
     display: flex;
@@ -195,6 +204,16 @@ img {
     width: 240px;
 }
 
+
+
+
+
+
+
+
+
+
+
 .section {
     display: flex;
     position: relative;
@@ -204,7 +223,7 @@ img {
     box-shadow: -100px 0px 1000px 100px inset #00b4d80a, 100px 0px 1000px 100px inset #27fb6a0e;
     padding: 50px 80px;
     font-size: 25px;
-  
+
     /* width: 100%; */
 }
 
@@ -310,6 +329,7 @@ flex: 1 0 39%;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#11296B",endColorstr="#00B4D8",GradientType=1); */
     box-shadow: -100px 0px 1000px 100px inset #00b4d80a, 100px 0px 1000px 100px inset #27fb6a0e;
     z-index: 10;
+    
 }
 
 .landingPage .background-box {
@@ -371,9 +391,7 @@ flex: 1 0 39%;
 }
 
 
-.elaborate {
-    background: rgba(39,251,107,1);
-}
+
 
 
 #pre-intro {
@@ -415,6 +433,7 @@ flex: 1 0 39%;
 #thegoal {
     padding: 50px 0;
 
+
 }
 
 #thegoal h1,h2 {
@@ -432,7 +451,7 @@ flex: 1 0 39%;
     box-sizing:border-box;
     font-weight: 500;
     color:#001c3aaa;
-
+    font-size: 20px;
 }
 
 #thegoal #goals-carousel {
@@ -530,6 +549,7 @@ flex-wrap: wrap;
 
 #intro {
     z-index: 11;
+
 }
 
 #intro h2 {
@@ -572,6 +592,7 @@ flex-wrap: wrap;
 .pillar {
     width: 80px;
     height: auto;
+    margin-bottom: 40px;
 }
 /* #intro li:nth-child(1){
     padding-bottom: 70px;
@@ -609,11 +630,15 @@ flex-wrap: wrap;
     line-height: 1.5em;
 }
 
+#whoweare {
+    
+}
+
 #wherenow {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 
 
@@ -732,30 +757,26 @@ flex-wrap: wrap;
 }
 
 #inspiring {
+    
+
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
+    height: auto;
+    font-size:40px;
 }
 
 #inspiring .quotation-mark {
-    height: 150px;
-    width: auto;
+    height: auto;
+    flex: 0 0 10px;
     padding-left: 30px;
     padding-right: 30px;
     
 }
 
 
-/* #theapp li {
-    flex: 0 0 200px;
-    height: 200px;
-    margin: 10px 10px;
-    border: 1px solid #001c3aff;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 18px;
-} */
+
 #theapp h2 {
     padding: 50px 0;
     font-weight: 700;
@@ -812,6 +833,7 @@ color: #001c3aaa;
 
 #thecommunity {
     justify-content: space-around;
+
 }
 
 #thecommunity .joinSocial {
@@ -823,10 +845,22 @@ color: #001c3aaa;
     height: 300px;
     box-shadow: 0px 0px 20px 1px #aaa;
     border-radius: 10px;
-    padding: 40px;
-    margin: 50px 0;
+    margin: 50px 20px 10px 0;
     box-sizing: border-box;
     transition: 0.5 all;
+}
+
+#thecommunity .joinSocial a {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    flex: 0 0 300px;
+    height:300px;
+    padding: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 #thecommunity .joinSocial h3{
@@ -874,6 +908,7 @@ color: #001c3aaa;
     margin: 10px 0;
     transition: 0.5s all;
     opacity: 0;
+    font-weight: 700;
 }
 
 #thecommunity .joinSocial:hover{
@@ -898,6 +933,7 @@ color: #001c3aaa;
 
 #missionPage {
     margin-bottom: 400px;
+
 }
 
 #missionPage button:hover {
@@ -939,13 +975,14 @@ footer {
     flex-wrap: wrap;
     bottom: 0;
     left: 0;
-    width: 100%;
+
     font-weight: 900;
     text-align: center;
     color: #fafafaaa;
     box-shadow: 0px 0px 1000px 10px inset #00b4d823;
     background: #001c3a;
     height: 400px;
+    overflow:hidden;
     z-index: -1;
 }
 
@@ -959,6 +996,7 @@ footer {
     
     .section {
         padding: 50px 20px;
+        overflow:hidden;
     }
     .landingPage {
         width:100%;
@@ -980,15 +1018,23 @@ footer {
     #thegoal h1,h2 {
         padding: 0 20px;
     }
+
+    #thegoal p {
+        padding: 0 20px;
+    }
     #thegoal .slick-slide{
      
-        height: 600px;
-        width: 300px;
+        height: 400px;
+        width: 250px;
      
     }
     #thegoal .slick-slide p{
      
         flex: 0 0 100%;
-     
+        padding: 0;
+        margin-bottom: 0;
+    }
+    #thecommunity {
+        justify-content: center;
     }
 }

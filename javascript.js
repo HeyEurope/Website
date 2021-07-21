@@ -15,7 +15,7 @@ let setHeight = () => {
         landingPage.style.minHeight = window.innerHeight + "px";
         for (let i = 0; i < sections.length; i++) {
             sections[i].style.minHeight = window.innerHeight + "px";
-            console.log("i run");
+
         }
         console.log(sections);
     } else {
@@ -24,7 +24,7 @@ let setHeight = () => {
         for (let i = 0; i < sections.length; i++) {
             sections[i].style.minHeight = window.innerHeight + "px";
             sections[i].style.height = "auto";
-            console.log("i run");
+
         }
     }
 
@@ -53,6 +53,8 @@ const paddingSize = 50;
 
 const actionsToggled = "restart pause pause pause";
 
+if(window.innerWidth > 1220){
+    
 gsap.to(introLi[0], {
     scrollTrigger: {
         trigger: introLi[0],
@@ -97,5 +99,6 @@ gsap.to(introLi[3], {
     y: -paddingSize,
     duration: 1,
 })
+}
 
 
