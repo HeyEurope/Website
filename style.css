@@ -55,7 +55,9 @@ body a {
     width: 50%;
     line-height: 1.5em;
     padding: 20px;
-    box-shadow: 0px 0px 40px 1px #aaa, -1px 0px 10px 1000px inset #00b4d80a, 1px 0px 10px 1000px inset #27fb6a0e;;
+    box-shadow: 0px 0px 40px 1px #aaa, -1px 0px 10px 1000px #00b4d80a inset, 1px 0px 10px 1000px #27fb6a0e inset;
+    -webkit-box-shadow:0px 0px 40px 1px #aaa, -1px 0px 10px 1000px #00b4d80a inset, 1px 0px 10px 1000px #27fb6a0e inset;
+    -moz-box-shadow: 0px 0px 40px 1px #aaa, -1px 0px 10px 1000px #00b4d80a inset, 1px 0px 10px 1000px #27fb6a0e inset;
 }
 
 .box-overlay div h3{
@@ -80,10 +82,10 @@ body a {
     font-size: 20px;
     font-weight: 500;   
 width: 200px;
-justify-content: center;
+justify-content: left;
 }
 .box-overlay div ul li{
-    width: 200px;
+    width: auto;
     text-align: left;
 }
 
@@ -220,7 +222,9 @@ img {
     flex-wrap: wrap;
     min-height: 600px;
     height: auto;
-    box-shadow: -100px 0px 1000px 100px inset #00b4d80a, 100px 0px 1000px 100px inset #27fb6a0e;
+    box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e inset;
+    -webkit-box-shadow: -100px 0px 1000px 100px #00b4d80a  inset, 100px 0px 1000px 100px #27fb6a0e  inset;
+    -moz-box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e  inset;
     padding: 50px 80px;
     font-size: 25px;
 
@@ -578,7 +582,7 @@ flex-wrap: wrap;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    flex: 0 0 50px;
+    flex: 1 0 50px;
     min-height: 300px;
     height: auto;
  margin-bottom: 40px;
@@ -653,7 +657,7 @@ flex-wrap: wrap;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex: 1 0 40%;
+    flex: 1 1 300px;
     border-radius: 10px;
     border: 1px solid #00b4d8;
     min-height: 300px;
@@ -856,7 +860,7 @@ color: #001c3aaa;
     position: relative;
     justify-content: center;
     flex-wrap: wrap;
-    flex: 0 0 300px;
+    flex: 1 0 300px;
     height: 300px;
     box-shadow: 0px 0px 20px 1px #aaa;
     border-radius: 10px;
@@ -1002,13 +1006,16 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
+    body .section img {
+        width: 150px;
+        height: auto;
+    }
+
     header{
         padding: 0 0;
     }
 
-    header .headerLogo h1 {
-   
-    }
+
     header .headerSocials button {
         display: none;
         align-items: center;
@@ -1023,10 +1030,23 @@ footer {
     header .headerSocials a {
         margin-right: 10px;
     }
+
+    .box-overlay div h3{
+        color: #001c3a;
+        text-align: left;
+        font-size: 25px;
+        font-weight: 900;
+        flex: 0 0 100%;
+    }
     
     .section {
         padding: 50px 20px;
        
+    }
+
+    .section h1 {
+        font-size: 30px;
+        height: 100px;
     }
     .landingPage {
         width:100%;
@@ -1064,12 +1084,72 @@ footer {
         padding: 0;
         margin-bottom: 0;
     }
+
+    #intro .pillar {
+        
+        width: 70px;
+        height: auto;
+    }
+    #wherenow {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #wherenow .project-stages{
+margin: 20px 0;
+padding: 10px;
+    }
+    .project-stages .project-image {
+        font-size: 30px;
+    }
+
+    #wherenow .layers>div:nth-last-child(1) {
+        margin-top: inherit;
+    }
+
+
     #thecommunity {
         justify-content: center;
     }
+
+    #thecommunity .joinSocial{
+        height: 200px;
+    }
+    #thecommunity .joinSocial h3{
+        font-size: 20px;
+    }
+    #thecommunity .joinSocial a {
+        height:200px;
+    }
+
+    #thecommunity .joinSocial i{
+        text-align: center;
+        flex: 0 0 100%;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    #thecommunity .joinSocial p{
+    
+        font-size: 14px;
+      
+    }
+    #thecommunity .joinSocial button{
+        display: block;
+        position: relative;
+      top: 0px;
+        width: 80%;
+        background: #27fb6b;
+        margin: 10px 0;
+        opacity: 1;
+        font-weight: 700;
+    }
+
+    #thecommunity .blur {
+        display: none;
+    }
+
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 350px) {
     .section{
         overflow: hidden;
     }
