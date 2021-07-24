@@ -8,7 +8,18 @@ const introPage = document.getElementById("intro");
 
 const introLi = introPage.getElementsByTagName("li");
 
-console.log(introLi);
+
+
+
+window.addEventListener("load", () => {
+    if(window.innerWidth > window.screen.width){
+        console.log(window.innerWidth, window.screen.width);
+        window.location.reload();
+    }
+
+});
+
+
 
 let setHeight = () => {
     if (window.innerWidth > 500) {
@@ -17,12 +28,12 @@ let setHeight = () => {
             sections[i].style.minHeight = window.innerHeight + "px";
 
         }
-        console.log(sections);
+
     } else {
         landingPage.style.minHeight = window.innerHeight + "px";
         landingPage.style.height = "auto";
         for (let i = 0; i < sections.length; i++) {
-            sections[i].style.minHeight = window.innerHeight + "px";
+            sections[i].style.minHeight = window.innerHeight/2 + "px";
             sections[i].style.height = "auto";
 
         }
