@@ -456,6 +456,7 @@ flex: 1 0 39%;
     font-weight: 500;
     color:#001c3aaa;
     font-size: 20px;
+    line-height: 1.5em;
 }
 
 #thegoal #goals-carousel {
@@ -846,8 +847,11 @@ color: #001c3aaa;
     text-align: left;
     font-weight: 700;
     margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
     font-size: 25px;
     color: #001c3aff;
+    background-color: #00b4d8;
 }
 
 #thecommunity {
@@ -1016,7 +1020,7 @@ footer {
     }
 
 
-    header .headerSocials button {
+    header .headerSocials a {
         display: none;
         align-items: center;
         margin-right: 20px;
