@@ -36,7 +36,7 @@ body a {
     display: flex;
     width: 100%;
     position: absolute;
-    bottom: -200px;
+    bottom: -100px;
     left:0px;
     justify-content: center;
     height: auto;
