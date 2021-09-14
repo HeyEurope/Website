@@ -227,7 +227,6 @@ img {
     -moz-box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e  inset;
     padding: 50px 80px;
     font-size: 25px;
-
     /* width: 100%; */
 }
 
@@ -321,12 +320,14 @@ flex: 1 0 39%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     position: relative;
     padding: 0px 2%;
-    width: 96%;
+    width: 100%;
     background: #fafafa;
     padding-top: 50px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
     /* background: -moz-linear-gradient(270deg, rgba(17, 41, 107) 0%, rgba(0, 180, 216,1) 100%);
     background: -webkit-linear-gradient(270deg, rgba(17, 41, 107) 0%, rgba(0, 180, 216,1) 100%);
     background: linear-gradient(270deg, rgba(17, 41, 107,1) 0%, rgba(0, 180, 216,1) 100%);
@@ -336,7 +337,7 @@ flex: 1 0 39%;
     
 }
 
-.landingPage .background-box {
+/* .landingPage .background-box {
 
     display: block;
     position: absolute;
@@ -350,7 +351,7 @@ flex: 1 0 39%;
 
 
 
-}
+} */
 
 
 .landingPage h1 {
@@ -1115,6 +1116,16 @@ footer {
     height: 400px;
     overflow:hidden;
     z-index: -1;
+}
+
+@media screen and (max-width: 900px) {
+    .landingPage {
+        flex-direction: column;
+        align-items: center;
+    }
+    .landingPage h1 {
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 500px) {
