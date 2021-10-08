@@ -1165,6 +1165,20 @@ footer {
     z-index: -1;
 }
 
+footer>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer>div p {
+    flex: 1 0 10%;
+    padding: 10px;
+
+}
+
 @media screen and (max-width: 900px) {
     .landingPage {
         flex-direction: column;
