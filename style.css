@@ -188,6 +188,53 @@ header .headerSocials a:hover {
 
 
 
+#loadingScreen {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background-color: #fafafa;
+
+    box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e inset;
+    -webkit-box-shadow: -100px 0px 1000px 100px #00b4d80a  inset, 100px 0px 1000px 100px #27fb6a0e  inset;
+    -moz-box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e  inset;
+    
+
+
+}
+
+
+
+#loadingScreen img {
+
+    display: inline-flex;
+    width: 300px;
+    height: auto;
+}
+
+#loadingScreen p {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: #001c3a;
+    font-size: 18px;
+}
+
+
+#loadingScreen h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    color: #001c3a;
+    font-size: 24px;
+}
 
 
 

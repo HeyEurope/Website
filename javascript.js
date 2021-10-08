@@ -8,7 +8,9 @@ const introPage = document.getElementById("intro");
 
 const introLi = introPage.getElementsByTagName("li");
 
+const loadingScreen = document.getElementById("loadingScreen");
 
+const body = document.querySelector("body");
 
 
 function setCookie(cname, cvalue, exseconds) {
@@ -33,7 +35,25 @@ function getCookie(cname) {
     return "";
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+
+
+    loadingScreen.style.display = "flex";
+    body.style.overflowY = 'hidden';
+
+});
+
+
+//solution for IE
+
+// window.attachEvent("onload", function() {
+//     // loaded
+// });
+
 window.addEventListener("load", () => {
+
+    loadingScreen.style.display = "none";
+    body.style.overflowY = 'visible';
     if (window.innerWidth > window.screen.width && getCookie('toReload') === '') {
         console.log(window.innerWidth, window.screen.width); String.
             setCookie('toReload', 'false', 5);
