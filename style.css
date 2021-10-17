@@ -446,8 +446,11 @@ flex: 1 0 39%;
 .landingPage button {
     display: flex;
     align-items: center;
+    text-align: center;
+    justify-content: center;
     margin: 25px 20px;
     height: 50px;
+    width: 325px;
     font-size: 25px;
     font-weight: 700;
     /* border: 2px solid #001c3aff; */
@@ -462,7 +465,7 @@ flex: 1 0 39%;
 }
 
 #landing-button1:hover, #landing-button2:hover {
-    color: #fff;
+    color: #001c3a;
     box-shadow: 0px 0px 20px 5px #001c3a;
 }
 
@@ -497,6 +500,7 @@ flex: 1 0 39%;
     opacity: 1;
     transition: opacity .3s ease-in-out;
     border-radius: 30px;
+    
 }
 
 .glow-on-hover:active {
@@ -506,7 +510,7 @@ flex: 1 0 39%;
 
 
 .glow-on-hover:hover:before {
-    opacity: 1;
+    opacity: 0.1;
 }
 
 #landing-button1:after {
@@ -528,7 +532,7 @@ flex: 1 0 39%;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #00b4d8;
+    background: #001c3a;
     left: 0;
     top: 0;
     border-radius: 30px;
