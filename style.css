@@ -146,8 +146,8 @@ header .headerSections {
 
 header .headerSocials {
     display: flex;
-    flex: 1 0 10%;
-    justify-content: flex-end;
+    flex: 1 0 1%;
+    justify-content: flex-start;
     align-items: center;
     padding-right: 20px;
 }
@@ -1190,6 +1190,14 @@ footer>div p {
     }
     .landingPage h1 {
         margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+
+    .headerSections{
+flex: 0 1 0%;
     }
 }
 
