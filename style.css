@@ -94,100 +94,55 @@ justify-content: left;
     padding-right: 10px;
 }
 
-header {
-    display: flex; 
-    align-items: space-between;
-    position: fixed;
-    z-index: 100;
-    height: 50px;
-    top: 0px;
-    left: 0px;
-   background: transparent;
-   width: 100%;
-   /* font-family: 'Plaster', 'Times New Roman', Times, serif; */
-  
-   font-size: 30px;
-   padding: 0px 20px;
-   transition: 0.5s all;
-   box-shadow: none;
-   
-}
-header .headerLogo {
-    display: flex;
-    align-items: center;
-    flex: 39%;
-    
-}
 
-header img {
-    display: inline;
-    position: relative;
+
+#loadingScreen {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
     left: 0;
-    height: 2em;
-    width: auto;
-    padding: 0 0;
-    padding: 0 10px;
-}
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background-color: #fafafa;
 
-header .headerLogo h1 {
-    display: inline;
-    font-weight: 900;
-    background: -webkit-linear-gradient(0deg, #001c3aff  0%,  #00b4d8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0px 0px 100px #27fb6a5e;
-  line-height: 50px;
-}
+    box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e inset;
+    -webkit-box-shadow: -100px 0px 1000px 100px #00b4d80a  inset, 100px 0px 1000px 100px #27fb6a0e  inset;
+    -moz-box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e  inset;
+    
 
-header .headerSections {
-    flex: 0 0 0%;
 
 }
 
-header .headerSocials {
-    display: flex;
-    flex: 1 0 10%;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 20px;
+
+
+#loadingScreen img {
+
+    display: inline-flex;
+    width: 300px;
+    height: auto;
 }
 
-header .headerSocials button {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-    height: 30px;
-    font-size: 15px;
+#loadingScreen p {
+    width: 100%;
+    text-align: center;
     font-weight: 700;
-    border: 2px solid #001c3aff;
-}
-header .headerSocials button:hover {
-
-    height: 30px;
-    font-size: 15px;
-    color: #00b4d8;
-    border: 2px solid #00b4d8;
+    color: #001c3a;
+    font-size: 18px;
 }
 
 
-
-header .headerSocials a {
-    text-decoration: none;
-    color: #001c3aff;
-    margin-right: 15px;
-    /* height: 60px;
-    width: 60px;
-    font-size: 50px; */
+#loadingScreen h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    color: #001c3a;
+    font-size: 24px;
 }
-
-header .headerSocials a:hover {
-
-    color: #00b4d8;
-
-}
-
-
-
 
 
 
@@ -205,10 +160,6 @@ button {
 img {
     width: 240px;
 }
-
-
-
-
 
 
 
@@ -399,8 +350,11 @@ flex: 1 0 39%;
 .landingPage button {
     display: flex;
     align-items: center;
+    text-align: center;
+    justify-content: center;
     margin: 25px 20px;
     height: 50px;
+    width: 325px;
     font-size: 25px;
     font-weight: 700;
     /* border: 2px solid #001c3aff; */
@@ -415,7 +369,7 @@ flex: 1 0 39%;
 }
 
 #landing-button1:hover, #landing-button2:hover {
-    color: #fff;
+    color: #001c3a;
     box-shadow: 0px 0px 20px 5px #001c3a;
 }
 
@@ -450,6 +404,7 @@ flex: 1 0 39%;
     opacity: 1;
     transition: opacity .3s ease-in-out;
     border-radius: 30px;
+    
 }
 
 .glow-on-hover:active {
@@ -459,7 +414,7 @@ flex: 1 0 39%;
 
 
 .glow-on-hover:hover:before {
-    opacity: 1;
+    opacity: 0.1;
 }
 
 #landing-button1:after {
@@ -481,7 +436,7 @@ flex: 1 0 39%;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #00b4d8;
+    background: #001c3a;
     left: 0;
     top: 0;
     border-radius: 30px;
@@ -1105,6 +1060,7 @@ footer {
     justify-content: center;
     position: fixed;
     flex-wrap: wrap;
+
     bottom: 0;
     left: 0;
     width: 100%;
@@ -1118,15 +1074,33 @@ footer {
     z-index: -1;
 }
 
+footer>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer>div p {
+    flex: 1 0 10%;
+    padding: 10px;
+
+}
+
 @media screen and (max-width: 900px) {
     .landingPage {
         flex-direction: column;
         align-items: center;
+        
     }
     .landingPage h1 {
+        margin-top: 100px;
         margin-bottom: 30px;
     }
 }
+
+
 
 @media screen and (max-width: 500px) {
     body .section img {
@@ -1134,25 +1108,6 @@ footer {
         height: auto;
     }
 
-    header{
-        padding: 0 0;
-    }
-
-
-    header .headerSocials a {
-        display: none;
-        align-items: center;
-        margin-right: 20px;
-        height: 30px;
-        font-size: 15px;
-        font-weight: 700;
-        border: 2px solid #001c3aff;
-    }
-
-
-    header .headerSocials a {
-        margin-right: 10px;
-    }
 
     .box-overlay div h3{
         color: #001c3a;

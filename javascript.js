@@ -8,13 +8,55 @@ const introPage = document.getElementById("intro");
 
 const introLi = introPage.getElementsByTagName("li");
 
-let globalIfReloaded = false;
+const loadingScreen = document.getElementById("loadingScreen");
 
+const body = document.querySelector("body");
+
+
+function setCookie(cname, cvalue, exseconds) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exseconds * 1000));
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+
+
+    loadingScreen.style.display = "flex";
+    body.style.overflowY = 'hidden';
+
+});
+
+
+//solution for IE
+
+// window.attachEvent("onload", function() {
+//     // loaded
+// });
 
 window.addEventListener("load", () => {
-    if (window.innerWidth > window.screen.width && globalIfReloaded == false) {
-        console.log(window.innerWidth, window.screen.width);
-        globalIfReloaded = true;
+
+    loadingScreen.style.display = "none";
+    body.style.overflowY = 'visible';
+    if (window.innerWidth > window.screen.width && getCookie('toReload') === '') {
+        console.log(window.innerWidth, window.screen.width); String.
+            setCookie('toReload', 'false', 5);
         window.location.reload();
 
     }
