@@ -1,3 +1,94 @@
+
+#whoweare li {
+    margin: 10px 0;
+}
+
+#whoweare li i{
+margin-right: 10px;
+}
+
+#countries-carousel {
+    /* display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+    /* box-shadow: 0px 0px 100px 1px #aaa; */
+    /* display: flex;
+    flex: 0 0 100%; */
+    display: flex;
+    width: 100%;
+    left: 0px;
+    color: #fafafa;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    align-items: flex-start;
+}
+
+
+
+#countries-carousel .slick-next::before {
+    display: none;
+    content:"\203A";
+    color: var(--ic-blue);
+    position: absolute;
+    left: 0px;
+    top: -150px;
+    font-size: 200px;
+    z-index: 100;
+    animation: cubic-bezier(0.175, 0.885, 0.32, 1.275) 4s lead-buttons-left infinite;
+}
+
+#countries-carousel .slick-prev::before {
+    display: none;
+    content:"\2039";
+    position: absolute;
+    color: var(--ic-blue);
+    right: 0px;
+    top: -150px;
+    font-size: 200px;
+    z-index: 100;
+    animation: cubic-bezier(0.175, 0.885, 0.32, 1.275) 4s lead-buttons-right infinite;
+}
+
+
+.slick-slide{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    min-height: 400px;
+    height: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 300px;
+ margin: 40px 50px;
+flex-wrap: wrap;
+ padding: 20px;
+ border-right: 1px solid #aaa;
+ background: #001c3aff;
+ border-radius: 10px;
+ box-shadow: 0px 0px 40px 10px #00b4d823;
+font-size: 18px;
+font-weight: 500;
+line-height: 1.5em;
+overflow: hidden;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    border-radius: 10px;
+}
+
+
+
+
 .member-profiles{
     display: flex; 
     height: 500px; 
@@ -15,14 +106,14 @@ margin-bottom: 20px;
 width:150px;
 }
 
-.member-profiles h1 {
+.member-profiles h4 {
     font-weight: 900;
     margin-top: 10px;
     font-size: 32px;
 
 }
 
-.member-profiles h2 {
+.member-profiles h5 {
     font-weight: 700;
     margin: 5px 0;
     color: gray;

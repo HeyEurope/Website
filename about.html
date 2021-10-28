@@ -93,44 +93,79 @@
 
 
     </section>
-    <section class="section" id="whoweare">
+    <section class="section" id="whoweare" style="padding:0">
 
-        <div class="left" style="align-items: center;line-height:1.5em;">
+        <div style="align-items: center;line-height:1.5em;max-width:400px;padding: 0 40px">
+            <h2>We are a student led non-profit project with a diverse team of
+                members from all around Europe. <i class="fas fa-globe"></i></h2>
 
-            <h2>We are a student led <span style="font-weight: 900;">non-profit</span> project with a goal of connecting
-                Young Citizens and the European Union.</h2>
+            <h2>Our goal is to empower
+                young citizens to engage
+                with the European Union.</h2>
 
-            <h3 style="width:100%;font-weight:600">Our Team members live&study in</h3>
-            <ul style="list-style-type:disc;padding-left: 40px">
-                <li>France</li>
-                <li>Albania</li>
-                <li>Greece</li>
-                <li>Spain</li>
-                <li>Malta</li>
-                <li>Hungary</li>
-                <li>United Kingdom</li>
-            </ul>
+            <!-- <h3 style="width:100%;font-weight:600">Our Team members live & study in</h3> -->
+
 
 
         </div>
-        <div class="right">
+        <!-- <div class="right">
             <img src="earth_with_locations.svg" alt="" style="height:auto; width: 325px;">
-        </div>
-        <div style="flex: 0 0 100%;height:200px"></div>
+        </div> -->
 
+        <h1 style="padding:0 40px;box-sizing:border-box">Our Home Countries</h1>
+
+        <div id="countries-carousel">
+            <div>
+                <img src="./media/images/malta.jpg" alt="">
+                <h1>Malta</h1>
+            </div>
+            <div>
+                <img src="./media/images/greece.jpg" alt="">
+                <h1>Greece</h1>
+            </div>
+            <div>
+                <img src="./media/images/albania.jpg" alt="">
+                <h1>Albania</h1>
+            </div>
+            <div>
+                <img src="./media/images/portugal.jpg" alt="">
+                <h1>Portugal</h1>
+            </div>
+            <div>
+                <img src="./media/images/germany.jpg" alt="">
+                <h1>Germany</h1>
+            </div>
+            <div>
+                <img src="./media/images/france.jpg" alt="">
+                <h1>France</h1>
+            </div>
+            <div>
+                <img src="./media/images/spain.jpg" alt="">
+                <h1>Spain</h1>
+            </div>
+            <div>
+                <img src="./media/images/hungary.jpg" alt="">
+                <h1>Hungary</h1>
+            </div>
+
+        </div>
 
 
     </section>
-    <section id="member-section"
+
+    <section id="member-section" class="section"
         style="display:flex;flex-wrap:wrap;justify-content:space-evenly;background: #fafafa;border-radius:10px;">
+        <h1>Our HQ</h1>
         <div class="member-profiles">
             <img src="./media/images/team-milan.png"></img>
-            <h1>
+            <h4>
                 Milan
-            </h1>
-            <h2>
+            </h4>
+            <h5>
                 CEO
-            </h2>
+
+            </h5>
+
             <p><i class="fas fa-map-marker"></i>United Kingdom</p>
             <p>
                 <i class="fas fa-graduation-cap"></i> Electrical Engineering
@@ -139,12 +174,12 @@
         </div>
         <div class="member-profiles">
             <img src="./media/images/team-elisa.png"></img>
-            <h1>
+            <h4>
                 Elisa
-            </h1>
-            <h2>
+            </h4>
+            <h5>
                 COO
-            </h2>
+            </h5>
             <p><i class="fas fa-map-marker"></i>Albania</p>
             <p>
                 <i class="fas fa-graduation-cap"></i> Computer Science
@@ -153,12 +188,12 @@
         </div>
         <div class="member-profiles">
             <img src="./media/images/team-chris.png"></img>
-            <h1>
+            <h4>
                 Chris
-            </h1>
-            <h2>
+            </h4>
+            <h5>
                 COO &CCO
-            </h2>
+            </h5>
             <p><i class="fas fa-map-marker"></i>Greece</p>
             <p>
                 <i class="fas fa-graduation-cap"></i>Physics
@@ -167,12 +202,12 @@
         </div>
         <div class="member-profiles">
             <img src="./media/images/team-tom.png"></img>
-            <h1>
+            <h4>
                 Tom
-            </h1>
-            <h2>
+            </h4>
+            <h5>
                 CCEO
-            </h2>
+            </h5>
             <p><i class="fas fa-map-marker"></i>France</p>
             <p>
                 <i class="fas fa-graduation-cap"></i> Aeronautical Engineering
@@ -181,12 +216,12 @@
         </div>
         <div class="member-profiles">
             <img src="./media/images/team-matthias.jpg"></img>
-            <h1>
+            <h4>
                 Matthias
-            </h1>
-            <h2>
+            </h4>
+            <h5>
                 CMO
-            </h2>
+            </h5>
             <p><i class="fas fa-map-marker"></i>Malta</p>
             <p>
                 <i class="fas fa-graduation-cap"></i> European Studies and Classics
@@ -209,13 +244,13 @@
         </p>
         <div style="display:flex;flex: 0 0 100%;justify-content:center;flex-wrap:wrap">
 
-            <form action="https://discord.gg/GJfvAdYDC6" target="_blank">
+            <form action="https://linktr.ee/heyeurope" target="_blank">
                 <button type="submit" style="background: #27fb6b;font-weight: 700;width: 160px;font-size: 30px;">Join
                     Us</button>
             </form>
 
             <p style="flex: 0 0 100%;text-align:center;margin-top:40px;color:#aaaaaaaa;font-size: 18px;">You will be
-                directed to our Discord community where you can join us with 2 clicks.</p>
+                directed to our LinkTree.</p>
         </div>
 
     </section>
@@ -290,58 +325,75 @@
 
 
 
-        <script type="text/javascript">
+<script type="text/javascript">
 
 
 
-            const header = document.querySelector("header");
+    const header = document.querySelector("header");
 
 
-            const loadingScreen = document.getElementById("loadingScreen");
+    const loadingScreen = document.getElementById("loadingScreen");
 
-            const body = document.querySelector("body");
-
-
-
-            document.addEventListener('DOMContentLoaded', () => {
+    const body = document.querySelector("body");
 
 
-                loadingScreen.style.display = "none";
-                body.style.overflowY = 'hidden';
 
-            });
+    document.addEventListener('DOMContentLoaded', () => {
 
 
-            //solution for IE
+        loadingScreen.style.display = "none";
+        body.style.overflowY = 'hidden';
 
-            // window.attachEvent("onload", function() {
-            //     // loaded
-            // });
-
-            window.addEventListener("load", () => {
-
-                loadingScreen.style.display = "none";
-                body.style.overflowY = 'visible';
-                if (window.innerWidth > window.screen.width && getCookie('toReload') === '') {
-                    console.log(window.innerWidth, window.screen.width); String.
-                        setCookie('toReload', 'false', 5);
-                    window.location.reload();
-
-                }
-
-            });
-
-            document.addEventListener("scroll", function () {
-                if (window.scrollY > 10) {
-                    header.style.background = "#fafafa";
-                    header.style.boxShadow = "0px 0px 50px 1px #000, -100px 0px 1000px 100px inset #00b4d80a, 100px 0px 1000px 100px inset #27fb6a0e";
-                } else {
-                    header.style.background = "transparent";
-                    header.style.boxShadow = "none";
-                }
-            })
+    });
 
 
-        </script>
+    //solution for IE
+
+    // window.attachEvent("onload", function() {
+    //     // loaded
+    // });
+
+    window.addEventListener("load", () => {
+
+        loadingScreen.style.display = "none";
+        body.style.overflowY = 'visible';
+        if (window.innerWidth > window.screen.width && getCookie('toReload') === '') {
+            console.log(window.innerWidth, window.screen.width); String.
+                setCookie('toReload', 'false', 5);
+            window.location.reload();
+
+        }
+
+    });
+
+    document.addEventListener("scroll", function () {
+        if (window.scrollY > 10) {
+            header.style.background = "#fafafa";
+            header.style.boxShadow = "0px 0px 50px 1px #000, -100px 0px 1000px 100px inset #00b4d80a, 100px 0px 1000px 100px inset #27fb6a0e";
+        } else {
+            header.style.background = "transparent";
+            header.style.boxShadow = "none";
+        }
+    })
+
+    $(document).ready(function () {
+        $('#countries-carousel').slick({
+            autoplay: true,
+            dots: true,
+            infinite: true,
+            centerMode: true,
+            variableWidth: true,
+            adaptiveHeight: true,
+            initialSlide: 0,
+            speed: 1000,
+            vertical: false,
+            autoplaySpeed: 3000,
+            swipeToSlide: true,
+            waitForAnimate: true,
+            pauseOnHover: false,
+        });
+    });
+
+</script>
 
 </html>
