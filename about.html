@@ -39,6 +39,7 @@
         integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <link rel="stylesheet" href="stylemultipage.css">
+    <link rel="stylesheet" href="about.css">
 
     <title>About Us</title>
     <!-- MAILCHIMP INTEGRATION -->
@@ -119,6 +120,79 @@
 
 
 
+    </section>
+    <section id="member-section"
+        style="display:flex;flex-wrap:wrap;justify-content:space-evenly;background: #fafafa;border-radius:10px;">
+        <div class="member-profiles">
+            <img src="./media/images/team-milan.png"></img>
+            <h1>
+                Milan
+            </h1>
+            <h2>
+                CEO
+            </h2>
+            <p><i class="fas fa-map-marker"></i>United Kingdom</p>
+            <p>
+                <i class="fas fa-graduation-cap"></i> Electrical Engineering
+            </p>
+            <p><i class="fas fa-heart"></i>Reading, Dancing</p>
+        </div>
+        <div class="member-profiles">
+            <img src="./media/images/team-elisa.png"></img>
+            <h1>
+                Elisa
+            </h1>
+            <h2>
+                COO
+            </h2>
+            <p><i class="fas fa-map-marker"></i>Albania</p>
+            <p>
+                <i class="fas fa-graduation-cap"></i> Computer Science
+            </p>
+            <p><i class="fas fa-heart"></i>Multilingual, Travelling</p>
+        </div>
+        <div class="member-profiles">
+            <img src="./media/images/team-chris.png"></img>
+            <h1>
+                Chris
+            </h1>
+            <h2>
+                COO &CCO
+            </h2>
+            <p><i class="fas fa-map-marker"></i>Greece</p>
+            <p>
+                <i class="fas fa-graduation-cap"></i>Physics
+            </p>
+            <p><i class="fas fa-heart"></i>History, Phylosophy</p>
+        </div>
+        <div class="member-profiles">
+            <img src="./media/images/team-tom.png"></img>
+            <h1>
+                Tom
+            </h1>
+            <h2>
+                CCEO
+            </h2>
+            <p><i class="fas fa-map-marker"></i>France</p>
+            <p>
+                <i class="fas fa-graduation-cap"></i> Aeronautical Engineering
+            </p>
+            <p><i class="fas fa-heart"></i>History, Technology</p>
+        </div>
+        <div class="member-profiles">
+            <img src="./media/images/team-matthias.jpg"></img>
+            <h1>
+                Matthias
+            </h1>
+            <h2>
+                CMO
+            </h2>
+            <p><i class="fas fa-map-marker"></i>Malta</p>
+            <p>
+                <i class="fas fa-graduation-cap"></i> European Studies and Classics
+            </p>
+            <p><i class="fas fa-heart"></i>Political Science, Europhile</p>
+        </div>
     </section>
 
 
@@ -211,60 +285,64 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous"></script>
-</body>
-
-<script type="text/javascript">
-
-
-
-    const header = document.querySelector("header");
-
-
-    const loadingScreen = document.getElementById("loadingScreen");
-
-    const body = document.querySelector("body");
+    <<<<<<< Updated upstream </body>
+        =======
+        >>>>>>> Stashed changes
 
 
 
-    document.addEventListener('DOMContentLoaded', () => {
+        <script type="text/javascript">
 
 
-        loadingScreen.style.display = "none";
-        body.style.overflowY = 'hidden';
 
-    });
+            const header = document.querySelector("header");
 
 
-    //solution for IE
+            const loadingScreen = document.getElementById("loadingScreen");
 
-    // window.attachEvent("onload", function() {
-    //     // loaded
-    // });
-
-    window.addEventListener("load", () => {
-
-        loadingScreen.style.display = "none";
-        body.style.overflowY = 'visible';
-        if (window.innerWidth > window.screen.width && getCookie('toReload') === '') {
-            console.log(window.innerWidth, window.screen.width); String.
-                setCookie('toReload', 'false', 5);
-            window.location.reload();
-
-        }
-
-    });
-
-    document.addEventListener("scroll", function () {
-        if (window.scrollY > 10) {
-            header.style.background = "#fafafa";
-            header.style.boxShadow = "0px 0px 50px 1px #000, -100px 0px 1000px 100px inset #00b4d80a, 100px 0px 1000px 100px inset #27fb6a0e";
-        } else {
-            header.style.background = "transparent";
-            header.style.boxShadow = "none";
-        }
-    })
+            const body = document.querySelector("body");
 
 
-</script>
+
+            document.addEventListener('DOMContentLoaded', () => {
+
+
+                loadingScreen.style.display = "none";
+                body.style.overflowY = 'hidden';
+
+            });
+
+
+            //solution for IE
+
+            // window.attachEvent("onload", function() {
+            //     // loaded
+            // });
+
+            window.addEventListener("load", () => {
+
+                loadingScreen.style.display = "none";
+                body.style.overflowY = 'visible';
+                if (window.innerWidth > window.screen.width && getCookie('toReload') === '') {
+                    console.log(window.innerWidth, window.screen.width); String.
+                        setCookie('toReload', 'false', 5);
+                    window.location.reload();
+
+                }
+
+            });
+
+            document.addEventListener("scroll", function () {
+                if (window.scrollY > 10) {
+                    header.style.background = "#fafafa";
+                    header.style.boxShadow = "0px 0px 50px 1px #000, -100px 0px 1000px 100px inset #00b4d80a, 100px 0px 1000px 100px inset #27fb6a0e";
+                } else {
+                    header.style.background = "transparent";
+                    header.style.boxShadow = "none";
+                }
+            })
+
+
+        </script>
 
 </html>

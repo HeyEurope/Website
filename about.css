@@ -1,0 +1,42 @@
+.member-profiles{
+    display: flex; 
+    height: 500px; 
+    width: 300px;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+.member-profiles img{
+
+border-radius: 10px;
+margin-bottom: 20px;
+width:150px;
+}
+
+.member-profiles h1 {
+    font-weight: 900;
+    margin-top: 10px;
+    font-size: 32px;
+
+}
+
+.member-profiles h2 {
+    font-weight: 700;
+    margin: 5px 0;
+    color: gray;
+    font-size: 24px;
+}
+
+.member-profiles p {
+    font-weight: 700;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.member-profiles i {
+    margin-right: 5px;
+    color: #001c3f;
+
+}
