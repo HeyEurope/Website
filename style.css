@@ -8,9 +8,43 @@
     src: url(./Gilroy-Light.ttf) format('truetype'); */
 }
 
+/*HERE COME THE GENERAL STYLESHEET KEYS*/
+
+.centre {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+
+.white-space {
+    height: 500px;
+}
+
 html{
     scroll-behavior: smooth;
 }
+
+#social-icons {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+     position:fixed;
+     top:0;
+     right:5px;
+     z-index:100;
+      height: 100%;
+      width:50px;
+    background: transparent;
+}
+
+
 
 body {
 
@@ -523,7 +557,7 @@ flex: 1 0 39%;
     line-height: 1.5em;
 }
 
-#thegoal #goals-carousel {
+#goals-carousel {
         /* display:flex;
         align-items: center;
         justify-content: space-around;
@@ -568,7 +602,7 @@ flex: 1 0 39%;
     }
 
 
-#thegoal .slick-slide{
+#goals-carousel .slick-slide{
         /* display: flex;
         justify-content: center;
         align-items: center;
@@ -594,14 +628,14 @@ flex-wrap: wrap;
     line-height: 1.5em;
     }
 
-#thegoal div h3 {
+#goals-carousel div h3 {
     flex: 0 0 100%;
     font-size: 24px;
     padding: 10px 0px 0 10px;
     font-weight: 700;
 }
 
-#thegoal div p {
+#goals-carousel div p {
     flex: 0 1 50%;
     font-size: 15px;
     opacity: 0.8;
@@ -609,7 +643,7 @@ flex-wrap: wrap;
     box-sizing: border-box;
 }
 
-#thegoal div img {
+#goals-carousel div img {
     flex: 1 0 49%;
     height: 100%;
     padding: 40px 0 80px 0;
@@ -861,14 +895,17 @@ flex-wrap: wrap;
 
 
 
-#theapp h2 {
-    padding: 50px 0;
+#theapp h2,p{
+    padding: 50px 40px;
     font-weight: 700;
     line-height: 1.5em;
     margin: 0;
+    box-sizing: border-box;
 }
 
-#theapp ul {
+
+
+#theapp .slick-track ul,#theapp>ul {
     display:flex;
     align-items: center;
     justify-content: space-around;
@@ -882,7 +919,7 @@ flex-wrap: wrap;
     height: auto;
 }
 
-#theapp li{
+#theapp .slick-track li, #theapp>ul>li{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -917,6 +954,12 @@ color: #001c3aaa;
     color: #001c3aff;
     background-color: #00b4d8;
 }
+
+#theapp>ul {
+    margin: 50px 40px;
+    box-sizing: border-box;
+}
+
 
 #thecommunity {
     justify-content: space-around;
@@ -1023,12 +1066,12 @@ color: #001c3aaa;
 
 }
 
-#missionPage button:hover {
+/* #missionPage button:hover {
     background: #00b4d8;
     font-size: 70px;
     box-shadow: 0 5px 10px 1px #444;
 
-}
+} */
 
 
  #soonPage {
@@ -1103,6 +1146,28 @@ footer>div p {
 
 
 @media screen and (max-width: 500px) {
+
+
+    #social-icons {
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction:row;
+        align-items:center;
+        justify-content:center;
+         position:fixed;
+         top:auto;
+         bottom: 0;
+         left: 0;
+         z-index:100;
+          height: 50px;
+          width:100%;
+        background: transparent;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+    }
+
+    
+
     body .section img {
         width: 150px;
         height: auto;

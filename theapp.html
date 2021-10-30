@@ -39,6 +39,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <link rel="stylesheet" href="stylemultipage.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="theapp.css">
     <title>The App</title>
     <!-- MAILCHIMP INTEGRATION -->
 
@@ -94,16 +95,70 @@
     <section class="section" id="theapp">
 
 
-        <p> We are developing the all-in-one <i class="fas fa-mobile-alt" style="padding: 0 10px"></i> platform for
-            young Europeans.
-        </p>
-        <p><br><br>...app demo is coming soon...</p>
-        <h2><br> The best part?</h2>
-        <p> It is
-            community driven.</p>
+        <div class="centre">
+            <p style="max-width:500px"> We are developing the all-in-one <i class="fas fa-mobile-alt"
+                    style="padding: 0 10px"></i> platform to
+                empower
+                young Europeans to engage with the European Union.
+            </p>
+            <div class="white-space"></div>
+            <p>...app demo is coming soon...</p>
+        </div>
+        <div class="centre">
+            <h2><br> The best part?</h2>
+            <i class="fas fa-map-marker" style="font-size: 50px;"></i>
+
+            <p style="font-weight: 900;"> It centralises all EU related information. </p>
+            <i class="fas fa-users" style="font-size: 50px;"></i>
+            <p>And it is all community driven.</p>
+        </div>
+
+        <h1>The Main Features</h1>
 
 
-        </h2>
+
+        <div id="goals-carousel">
+            <div>
+                <h3>I. Central Source</h3>
+                <p>Provide a
+                    <span style="color: #FFEA00">central</span>
+                    source of information about the <span style="color:#00B4D8">European Union</span>
+                    and our opportunities within it. Transparency is essential for trust.
+                </p>
+                <img src="central-source.svg" alt="">
+            </div>
+            <div>
+                <h3>II. Education</h3>
+                <p>Past. Present. Future. Overcoming challenges. Powerful democracies are founded on education.</p>
+                <img src="education-goals.svg" alt="">
+            </div>
+            <div>
+                <h3>III. Decision-making</h3>
+                <p>
+                    Connect Young People effectively and seamlessly with decision-makers and contribute to
+                    open-democracies. Communication is key.
+                </p>
+                <img src="connect-goals.svg" alt="">
+            </div>
+            <div>
+                <h3>IV. Communities</h3>
+                <p>
+                    Empower Young People to form
+                    and join communities and translate their knowledge into real-world actions. Enhancing the
+                    European
+                    culture and fostering Europeanisation. Overcoming global challenges need collaborative action.
+                </p>
+                <img src="community-goals.svg" alt="">
+            </div>
+        </div>
+
+        <p style="flex: 0 0 100%;text-align:center;margin-top:40px;color:#555;font-size: 18px;">Our mobile platform
+            contributes to realising the European Youth Goals as part of the <a
+                href="https://europa.eu/youth/strategy/european-youth-goals_en" ref="noreferrer" target="_blank">EU
+                Youth Strategy
+                2019-2027</a>.</p>
+
+
         <div style="flex: 0 0 100%;height:100px"></div>
         <ul style="background:#fafafa">
             <li><em>Provides</em>
@@ -112,7 +167,8 @@
             </li>
             <li><em>Equips</em>
                 <img src="road_to_knowledge.svg" alt="">
-                <p> them with knowledge about the EU and the pressing global challenges of the 21st Century, and teaches
+                <p> them with knowledge about the EU and the pressing global challenges of the 21st Century, and
+                    teaches
                     them how to help overcome them
 
                 </p>
@@ -135,32 +191,23 @@
 
         </ul>
 
-
-
     </section>
+
 
 
     <section class="section" id="missionPage"
         style="display:flex;align-items:center;justify-content:center;font-size:30px;">
-        <p>Our mission is to <span style="color: #27fb6b">empower</span> young citizens to accelerate <span
-                style="color: #00b4d8 ">Europe's</span> transition into <span
-                style="text-decoration:underline;text-decoration-color:#27fb6b;text-decoration-style:wavy">
-                sustainability.</span>
 
-        </p>
-        <p style="flex: 0 0 100%;text-align:center;margin: 40px 0;color:#aaaaaaaa;font-size: 18px;">
-            Our platform contributes to realising the European Youth Goals as part of the EU Youth Strategy 2019-2027.
-        </p>
-        <div style="display:flex;flex: 0 0 100%;justify-content:center;flex-wrap:wrap">
+        <div class="centre">
+            <p>Do you want to help us make this a reality asap?
 
-            <form action="https://discord.gg/GJfvAdYDC6" target="_blank">
-                <button type="submit" style="background: #27fb6b;font-weight: 700;width: 160px;font-size: 30px;">Join
-                    Us</button>
+            </p>
+            <form action="https://forms.gle/57RdduNoPkL5KWvPA" ref="noreferrer" target="_blank">
+                <button type="submit" id="landing-button1" class="glow-on-hover">JOIN OUR TEAM</button>
             </form>
-
-            <p style="flex: 0 0 100%;text-align:center;margin-top:40px;color:#aaaaaaaa;font-size: 18px;">You will be
-                directed to our Discord community where you can join us with 2 clicks.</p>
         </div>
+
+
 
     </section>
     <!-- <div class="section" id="soonPage">
@@ -228,8 +275,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
-        <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
 </body>
 
 <script type="text/javascript">
@@ -281,9 +328,25 @@
             header.style.background = "transparent";
             header.style.boxShadow = "none";
         }
-    })
+    });
 
-
+    $(document).ready(function () {
+        $('#goals-carousel').slick({
+            autoplay: true,
+            dots: true,
+            infinite: true,
+            centerMode: true,
+            variableWidth: true,
+            adaptiveHeight: true,
+            initialSlide: 0,
+            speed: 1000,
+            vertical: false,
+            autoplaySpeed: 3000,
+            swipeToSlide: true,
+            waitForAnimate: true,
+            pauseOnHover: false,
+        });
+    });
 </script>
 
 </html>

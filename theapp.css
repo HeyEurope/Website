@@ -1,0 +1,27 @@
+.slick-dots {
+    display: none;
+    position: relative;
+    width: 0px;
+    height: 0px;
+}
+
+#goals-carousel {
+    z-index: 10;
+}
+
+#goals-carousel li {
+    border: none;
+    box-sizing: border-box;
+}
+
+#theapp {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    display: block;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
