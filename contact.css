@@ -1,0 +1,15 @@
+#contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-option {
+margin: 10px 0;
+}
+
+
+.contact-option i{
+    margin: 0 10px;
+    width: 20px;
+    }
+    

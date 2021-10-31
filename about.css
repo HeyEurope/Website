@@ -7,6 +7,41 @@
 margin-right: 10px;
 }
 
+
+#content .info {
+    height: 20px;
+  }
+  
+  #content .map path {
+    fill: #aaa;
+    stroke: #fff;
+  }
+  
+  #content .bounding-box rect {
+    fill: none;
+    stroke: #333;
+    stroke-dasharray: 2,1;
+  }
+  
+  #content .centroid {
+    display: none;
+  }
+  
+  #content .centroid circle {
+    fill: red;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 #countries-carousel {
     /* display:flex;
     align-items: center;
