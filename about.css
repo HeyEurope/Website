@@ -1,4 +1,8 @@
 
+#whoweare h2 {
+    padding: 20px 0;
+}
+
 #whoweare li {
     margin: 10px 0;
 }
@@ -97,13 +101,13 @@ margin-right: 10px;
     min-height: 400px;
     height: auto; */
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    height: 350px;
+    height: 250px;
     width: 300px;
  margin: 40px 50px;
 flex-wrap: wrap;
- padding: 20px;
  border-right: 1px solid #aaa;
  background: #001c3aff;
  border-radius: 10px;
@@ -115,10 +119,22 @@ overflow: hidden;
 }
 
 .slick-slide img {
-    width: 100%;
-    height: auto;
-    max-height: 150px;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
     border-radius: 10px;
+    opacity: 0.5;
+}
+
+.slick-slide h1 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 5px;
 }
 
 
@@ -126,7 +142,8 @@ overflow: hidden;
 
 .member-profiles{
     display: flex; 
-    height: 500px; 
+    height: auto;
+    margin-bottom: 50px;
     width: 300px;
     justify-content: center; 
     flex-wrap: wrap; 
@@ -159,6 +176,7 @@ width:150px;
     font-weight: 700;
     margin: 5px 0;
     font-size: 16px;
+    padding: 0 0;
 }
 
 .member-profiles i {
