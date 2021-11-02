@@ -11,6 +11,11 @@
 margin-right: 10px;
 }
 
+#whoweare p {
+    font-weight: 500;
+    padding-left: 0;
+}
+
 
 #content .info {
     height: 20px;
