@@ -11,8 +11,18 @@
 /*HERE COME THE GENERAL STYLESHEET KEYS*/
 
 
+button.slick-next, button.slick-prev {
+    display: none;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: 0;
+    border: none;
 
-.section button {
+}
+
+
+.section>button {
     display: flex;
     align-items: center;
     text-align: center;
@@ -23,7 +33,7 @@
     font-size: 25px;
     font-weight: 700;
     /* border: 2px solid #001c3aff; */
-    border: none;
+    border: 1px solid #fafafa;
 }
 .section button:hover {
 
@@ -66,11 +76,12 @@ button i {
 .grey-comment {
 margin-top:40px;
 color:#555;
-font-size: 18px;
+font-size: 1rem;
 }
 
 html{
     scroll-behavior: smooth;
+    font-size: 14px;
 }
 
 
@@ -214,10 +225,10 @@ justify-content: left;
 
 
 
-button {
+.section>button {
     border-radius: 20px;
     background: transparent;
-    border: 1px solid black;
+
     padding: 10px 20px 10px 20px;
     cursor: pointer;
 }
@@ -241,8 +252,7 @@ img {
     box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e inset;
     -webkit-box-shadow: -100px 0px 1000px 100px #00b4d80a  inset, 100px 0px 1000px 100px #27fb6a0e  inset;
     -moz-box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e  inset;
-    padding: 50px 80px;
-    font-size: 25px;
+    padding: 50px 0;
     box-sizing: border-box;
     /* width: 100%; */
 }
@@ -269,6 +279,7 @@ img {
     font-size: 50px;
     font-weight: 900;
     box-sizing: border-box;
+    padding: 2.5rem 1.5rem;
 }
 
 .section h1::after {
@@ -287,10 +298,21 @@ img {
 .section h2 {
     width: 100%;
     font-weight:900;
-    margin:100px 0;
+    margin:20px 0;
     line-height: 1.5em;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem;
 }
 
+.section p {
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.section ul {
+    padding: 2.5rem 1.5rem;
+}
 
 
 
@@ -375,16 +397,17 @@ flex: 1 0 39%;
 .landingPage h1 {
     
     display: inline;
- text-align: center;
+ text-align: left;
     position: relative;
     margin: 0;
     left: 0%;
     top: 0%;
-    flex: 0 0 60%;
-    font-size: 80px;
-    padding: 0 20%;
+    flex: 0 0 100%;
+    font-size: 5rem;
+    padding: 10px 50px;
     word-spacing: 10px;
-    font-weight: 500;
+    font-weight: 900;
+    
     /* height: 50%; */
     line-height: normal;
     /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
@@ -393,7 +416,18 @@ flex: 1 0 39%;
   -webkit-text-fill-color: transparent;
 
   text-shadow: 0px 0px 100px #27fb6a5e;
+  box-sizing: border-box;
   
+}
+
+.landingPage p {
+    font-size: 1rem;
+    line-height: normal;
+    padding: 10px 50px;
+}
+
+.landingPage .left {
+    justify-content: center;
 }
 
 
@@ -442,7 +476,7 @@ flex: 1 0 39%;
 
 .glow-on-hover {
 
-    border: none;
+    border: 3px solid #fafafa;
     outline: none;
     color: #fff;
     background: #fff;
@@ -580,12 +614,19 @@ justify-content:center;
 width: 300px;
 height: auto;
 margin-bottom: 30px;
+padding: 20px;
+box-sizing: border-box;
 }
 
 #theproblem .aproblem i {
-    font-size: 80px;
+    font-size: 6rem;
     margin-bottom: 40px;
 }
+
+#theproblem .aproblem p {
+    text-align: center;
+}
+
 
 #theproblem .ref {
     margin-top: 20px;
@@ -596,27 +637,29 @@ margin-bottom: 30px;
     
 #thegoal {
     padding: 50px 0;
-
+    box-sizing: border-box;
+    overflow-x: hidden;
 
 }
 
-#thegoal h1, #thegoal h2 {
+#thegoal h1{
     padding: 0 80px;
     box-sizing: border-box;
 }
 
-#thegoal h2 {
-    margin:20px 0;
+#thegoal>h2 {
+    padding: 0px 20px;
     font-weight: 700;
+    color:#00B4D8;
 }
 
-#thegoal>p {
-    padding: 0 80px 0 100px;
+#thegoal p {
+    padding: 0 20px;
     box-sizing:border-box;
     font-weight: 500;
-    color:#001c3aaa;
-    font-size: 20px;
+    color:#fafafa;
     line-height: 1.5em;
+    width: 100%;
 }
 
 #goals-carousel {
@@ -641,6 +684,8 @@ margin-bottom: 30px;
 
     #goals-carousel .slick-next::before {
         display: none;
+        height: 0px;
+        width: 0px;
         content:"\203A";
         color: var(--ic-blue);
         position: absolute;
@@ -663,6 +708,9 @@ margin-bottom: 30px;
         animation: cubic-bezier(0.175, 0.885, 0.32, 1.275) 4s lead-buttons-right infinite;
     }
 
+    #goals-carousel .slick-track {
+        
+    }
 
 #goals-carousel .slick-slide{
         /* display: flex;
@@ -1056,7 +1104,7 @@ align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 1000px;
+    height: auto;
 }
 
 #thecommunity .joinSocial {
@@ -1239,7 +1287,7 @@ footer>div p {
 
 
 h2 {
-    font-size: 20px;
+    font-size: 1.5rem;
 }
     p {
         font-size: 16px;
@@ -1330,6 +1378,10 @@ h2 {
         flex: 0 0 100%;
         padding: 0;
         margin-bottom: 0;
+    }
+
+    #goals-carousel .slick-slide {
+        width: 300px;
     }
 
     #intro .pillar {
