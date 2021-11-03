@@ -1,0 +1,7 @@
+#available-positions li{
+    margin: 50px 0;
+}
+
+#available-positions li i{
+    margin-right: 10px;
+}

@@ -15,6 +15,7 @@ button {
     align-items: center;
     text-align: center;
     justify-content: center;
+    min-width: 200px;
     margin: 25px 20px;
     height: 50px;
     font-size: 25px;
@@ -70,21 +71,6 @@ html{
     scroll-behavior: smooth;
 }
 
-#social-icons {
-    display: flex;
-    flex-wrap:wrap;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-     position:fixed;
-     top:0;
-     right:5px;
-     z-index:100;
-      height: 100%;
-      width:50px;
-    background: transparent;
-}
-
 
 
 body {
@@ -95,7 +81,7 @@ body {
     width: 100%;
     height: auto; 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
+    overflow-y: hidden;
 }
 
 body a {
@@ -255,6 +241,7 @@ img {
     -moz-box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e  inset;
     padding: 50px 80px;
     font-size: 25px;
+    box-sizing: border-box;
     /* width: 100%; */
 }
 
@@ -763,6 +750,8 @@ flex-wrap: wrap;
  box-shadow: 0px 0px 20px 1px #aaa;
 }
 
+
+
 .pillar {
     width: 80px;
     height: auto;
@@ -807,6 +796,17 @@ flex-wrap: wrap;
 #whoweare {
     
 }
+
+
+#whoweare #members-map {
+    display:flex;
+
+    max-width: 625px;
+    min-width:320px;
+    height:auto;
+    box-sizing: border-box;
+}
+
 
 #wherenow {
     display: flex;
@@ -1260,6 +1260,7 @@ footer>div p {
     
     .section {
         padding: 50px 20px;
+        flex-direction: column;
        
     }
 
