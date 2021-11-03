@@ -99,11 +99,25 @@ document.addEventListener("resize", function () {
 })
 
 document.addEventListener("scroll", function () {
-    if (window.scrollY > 10) {
-        header.style.background = "#fafafa";
-        header.style.boxShadow = "0px 0px 50px 1px #000, -100px 0px 1000px 100px inset #00b4d80a, 100px 0px 1000px 100px inset #27fb6a0e";
+    if (window.innerWidth > 500) {
+        if (window.scrollY > 10) {
+            header.style.background = "#fafafa";
+            header.style.boxShadow = "0px 0px 50px 1px #000, -100px 0px 1000px 100px inset #00b4d80a, 100px 0px 1000px 100px inset #27fb6a0e";
+        } else {
+            header.style.background = "transparent";
+            header.style.boxShadow = "none";
+        }
     } else {
-        header.style.background = "transparent";
-        header.style.boxShadow = "none";
+        if (window.scrollY > 10) {
+            header.style.background = "#fafafa";
+
+        } else {
+            header.style.background = "#fafafa";
+            header.style.boxShadow = "none";
+        }
+
+
+
     }
+
 })

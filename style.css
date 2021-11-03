@@ -10,7 +10,9 @@
 
 /*HERE COME THE GENERAL STYLESHEET KEYS*/
 
-button {
+
+
+.section button {
     display: flex;
     align-items: center;
     text-align: center;
@@ -23,7 +25,7 @@ button {
     /* border: 2px solid #001c3aff; */
     border: none;
 }
-button:hover {
+.section button:hover {
 
     height: 50px;
     font-size: 25px;
@@ -266,19 +268,20 @@ img {
     height: 200px;
     font-size: 50px;
     font-weight: 900;
-
+    box-sizing: border-box;
 }
 
 .section h1::after {
     content: "";
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 10px;
     background-color: #00b4d8;
     position: relative;
     left:0px;
     top:0px;
     margin: 15px 0;
+    box-sizing: border-box;
 }
 
 .section h2 {
@@ -340,7 +343,7 @@ flex: 1 0 39%;
     padding: 0px 2%;
     width: 100%;
     background: #fafafa;
-    padding-top: 50px;
+    padding-top: 150px;
     padding-bottom: 100px;
     box-sizing: border-box;
     /* background: -moz-linear-gradient(270deg, rgba(17, 41, 107) 0%, rgba(0, 180, 216,1) 100%);
@@ -378,7 +381,7 @@ flex: 1 0 39%;
     left: 0%;
     top: 0%;
     flex: 0 0 60%;
-    font-size: 26px;
+    font-size: 80px;
     padding: 0 20%;
     word-spacing: 10px;
     font-weight: 500;
@@ -575,7 +578,8 @@ flex-direction: column;
 align-items: center;
 justify-content:center;
 width: 300px;
-height: 400px;
+height: auto;
+margin-bottom: 30px;
 }
 
 #theproblem .aproblem i {
@@ -1043,6 +1047,16 @@ align-items: center;
 #thecommunity {
     justify-content: flex-start;
 
+    box-sizing: border-box;
+}
+
+#community-links {
+    display: flex;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
 }
 
 #thecommunity .joinSocial {
@@ -1050,23 +1064,22 @@ align-items: center;
     position: relative;
     justify-content: center;
     flex-wrap: wrap;
-    flex: 1 0 300px;
+    flex: 1 1 325px;
     height: 300px;
     box-shadow: 0px 0px 20px 1px #aaa;
     border-radius: 10px;
-    margin: 50px 20px 10px 0;
+   margin: 50px 20px;
+   padding: 5px;
     box-sizing: border-box;
     transition: 0.5 all;
 }
 
 #thecommunity .joinSocial a {
     display: flex;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    flex: 0 0 300px;
+
+    flex: 0 0 100%;
     height:300px;
-    padding: 40px;
+    padding: 40px 0px;
     justify-content: center;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -1224,6 +1237,19 @@ footer>div p {
 @media screen and (max-width: 500px) {
 
 
+
+h2 {
+    font-size: 20px;
+}
+    p {
+        font-size: 16px;
+    }
+
+    .glow-on-hover::before {
+        display: none;
+    }
+
+
     #social-icons {
         display: flex;
         flex-wrap:wrap;
@@ -1267,6 +1293,7 @@ footer>div p {
     .section h1 {
         font-size: 30px;
         height: 100px;
+        width: 100%;
     }
     .landingPage {
         width:100%;
@@ -1274,7 +1301,7 @@ footer>div p {
     }
     .landingPage h1 {
         padding: 30px 0;
-
+        font-size: 40px;
     }
     .landingPage .left {
         justify-content: center;
@@ -1332,7 +1359,7 @@ padding: 10px;
     }
 
     #thecommunity .joinSocial{
-        height: 200px;
+
     }
     #thecommunity .joinSocial h3{
         font-size: 20px;
@@ -1364,6 +1391,10 @@ padding: 10px;
     }
 
     #thecommunity .blur {
+        display: none;
+    }
+
+    .box-overlay {
         display: none;
     }
 
