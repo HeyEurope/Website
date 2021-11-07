@@ -308,6 +308,7 @@ img {
 .section p {
     padding: 1rem 1.5rem;
     box-sizing: border-box;
+    font-weight: 500;
 }
 
 .section ul {
@@ -940,7 +941,7 @@ flex-wrap: wrap;
 .project-stages p {
     flex: 1 0 49%;
     font-weight: 500;
-    font-size: 18px;
+    
 }
 
 .project-stages .project-image {
