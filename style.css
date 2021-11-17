@@ -285,7 +285,7 @@ img {
 .section h1::after {
     content: "";
     display: flex;
-    width: 80%;
+    width: 100%;
     height: 10px;
     background-color: #00b4d8;
     position: relative;
@@ -643,10 +643,7 @@ box-sizing: border-box;
 
 }
 
-#thegoal h1{
-    padding: 0 80px;
-    box-sizing: border-box;
-}
+
 
 #thegoal>h2 {
     padding: 0px 20px;
@@ -1138,7 +1135,7 @@ align-items: center;
     text-align: center;
     text-transform:uppercase;
     flex: 0 0 100%;
-
+    font-weight: 700;
 }
 #thecommunity .joinSocial i{
     text-align: center;

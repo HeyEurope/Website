@@ -1,7 +1,46 @@
-#available-positions li{
-    margin: 50px 0;
+#available-positions {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    justify-content: space-evenly;
 }
+
+
+
+
+#available-positions>li{
+    margin: 50px 0;
+    background-color: #fafafa;
+    color: #001c3a;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+}
+
+ul li h3{
+    font-weight: 700;
+}
+
+#available-positions li h4{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#available-positions>li>ul{
+    list-style-type: disc;
+    line-height: 1.5rem;
+}
+
 
 #available-positions li i{
     margin-right: 10px;
+}
+
+#faq ul li{
+margin-bottom: 30px;
+}
+
+#faq ul li p {
+    font-weight: 400;
 }
