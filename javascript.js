@@ -18,6 +18,25 @@ const loadingScreen = document.getElementById("loadingScreen");
 const body = document.querySelector("body");
 
 
+const mobileMenu = document.getElementById("mobileMenu");
+
+let showMenu = false;
+
+let OpenMenu = () => {
+if(showMenu){
+    mobileMenu.style.display = "none" ;
+    showMenu = false;
+} else {
+    mobileMenu.style.display = "flex";
+showMenu = true;
+}
+}
+
+
+
+
+
+
 function setCookie(cname, cvalue, exseconds) {
     const d = new Date();
     d.setTime(d.getTime() + (exseconds * 1000));

@@ -50,10 +50,12 @@
 
 
     <header>
-        <div class="headerLogo">
-            <img src="final_logo_nobg.svg" alt="HeyEurope Logo">
-            <h1>HeyEurope</h1>
-        </div>
+        <a href="./index.html">
+            <div class="headerLogo">
+                <img src="final_logo_nobg.svg" alt="HeyEurope Logo">
+                <h1>HeyEurope</h1>
+            </div>
+        </a>
         <div class="headerSections" style="">
             <a style="margin: 0 10px; width: 60px;" href=" ./index.html">Home</a>
             <a style=" margin: 0 10px; width: 80px" href="./about.html">About Us</a>
@@ -74,12 +76,12 @@
                 <i class="fab fa-instagram"></i></a>
             <a href="https://vm.tiktok.com/ZMdG4uAsr/" ref="noreferrer" target="_blank"><i
                     class="fab fa-tiktok"></i></a> -->
-            <div id="menubutton">
-                <a onclick="OpenMenu">
-                    <i class="fas fa-bars"></i>
-                </a>
-
-            </div>
+                    <div id="menubutton">
+                        <a href="javascript:void(0);" onclick="OpenMenu()">
+                            <i class="fas fa-bars"></i>
+                        </a>
+        
+                    </div>
         </div>
 
 
@@ -266,6 +268,23 @@
 
 
     </section>
+
+    <div id="mobileMenu">
+
+        <a style="margin: 0 10px;width:100%;color:#001c3aff" href=" ./index.html">Home</a>
+        <a style=" margin: 0 10px;" href="./about.html">About Us</a>
+        <a style="margin: 0 10px;" href="./theapp.html">The App</a>
+        <a style="margin: 0 10px;" href="./helpus.html">Help Us</a>
+        <a style="margin: 0 10px;" href="./contact.html">Contact</a>
+        <form action="https://linktr.ee/heyeurope" target="_blank">
+            <button type="submit">Join</button>
+        </form>
+
+
+    </div>
+
+
+
     <aside id="social-icons">
         <a style="margin:5px 0;display:flex;align-items:center;justify-content:center;width: 50px;height: 50px;font-size:25px;background:#001c3aff;border-radius:30px;text-align:center"
             href="https://www.facebook.com/heyeurope.official" ref="noreferrer" target="_blank"><i
@@ -277,6 +296,9 @@
             href="https://vm.tiktok.com/ZMdG4uAsr/" ref="noreferrer" target="_blank"><i class="fab fa-tiktok"></i></a>
 
     </aside>
+
+    <script src="javascript.js" type="text/javascript"></script>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
