@@ -91,7 +91,10 @@ window.addEventListener("load", () => {
 
 let setHeight = () => {
     if (window.innerWidth > 500) {
-        landingPage.style.minHeight = window.innerHeight + "px";
+        if(landingPage){
+            landingPage.style.minHeight = window.innerHeight + "px";
+        }
+        
         for (let i = 0; i < sections.length; i++) {
             sections[i].style.minHeight = window.innerHeight + "px";
 
@@ -99,7 +102,11 @@ let setHeight = () => {
 
     } else {
         landingPage.style.minHeight = window.innerHeight + "px";
-        landingPage.style.height = "auto";
+        
+        if(landingPage){
+            landingPage.style.height = "auto";
+        }
+
         for (let i = 0; i < sections.length; i++) {
             sections[i].style.minHeight = window.innerHeight / 2 + "px";
             sections[i].style.height = "auto";
