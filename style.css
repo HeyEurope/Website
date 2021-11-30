@@ -370,8 +370,9 @@ flex: 1 0 39%;
 .landingPage {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     position: relative;
     padding: 0px 2%;
     width: 100%;
@@ -388,27 +389,11 @@ flex: 1 0 39%;
     
 }
 
-/* .landingPage .background-box {
-
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    right: 0px;
-    top: 0px;
-    background: #27fb6b;
-    transform: rotate(-50deg);
-    z-index: -1;
-
-
-
-} */
-
 
 .landingPage h1 {
     
     display: inline;
- text-align: left;
+ text-align: center;
     position: relative;
     margin: 0;
     left: 0%;
@@ -432,13 +417,10 @@ flex: 1 0 39%;
 }
 
 .landingPage p {
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: normal;
     padding: 10px 50px;
-}
-
-.landingPage .left {
-    justify-content: center;
+    font-weight: 700;
 }
 
 
@@ -446,18 +428,6 @@ flex: 1 0 39%;
 .landingPage h1::after {
     display: none;
 }
-
-
-
-
-
-.landingPage .landing-image {
-    height: auto;
-    width: 80%;
-   
-    /* box-shadow: 0px 0px 1000px 10px inset #00b4d833, 0px 0px 1000px 10px #00b4d833; */
-}
-
 
 .landingPage button {
     display: flex;
@@ -512,7 +482,7 @@ flex: 1 0 39%;
     filter: blur(5px);
     width: calc(100% + 4px);
     height: calc(100% + 4px);
-    animation: glowing 40s linear infinite;
+    /* animation: glowing 40s linear infinite; */
     opacity: 1;
     transition: opacity .3s ease-in-out;
     border-radius: 30px;
@@ -580,6 +550,10 @@ flex: 1 0 39%;
     justify-content: center;
     overflow: hidden;
 }
+
+#pre-intro h2{
+    font-size: 2.5rem;
+}
 #pre-intro q{
     text-align: left;
     z-index: 3;
@@ -627,6 +601,10 @@ height: auto;
 margin-bottom: 30px;
 padding: 20px;
 box-sizing: border-box;
+border-radius: 20px;
+border: 1px solid #001c3a;
+background: #001c3a;
+color: #fafafa;
 }
 
 #theproblem .aproblem i {
@@ -1115,12 +1093,12 @@ align-items: center;
     height: auto;
 }
 
-#thecommunity .joinSocial {
+#community-links .joinSocial {
     display: flex;
     position: relative;
     justify-content: center;
     flex-wrap: wrap;
-    flex: 1 1 325px;
+    flex: 1 1 200px;
     height: 300px;
     box-shadow: 0px 0px 20px 1px #aaa;
     border-radius: 10px;
@@ -1130,7 +1108,7 @@ align-items: center;
     transition: 0.5 all;
 }
 
-#thecommunity .joinSocial a {
+#community-links .joinSocial a {
     display: flex;
 
     flex: 0 0 100%;
@@ -1141,19 +1119,19 @@ align-items: center;
     box-sizing: border-box;
 }
 
-#thecommunity .joinSocial h3{
+#community-links .joinSocial h3{
     text-align: center;
     text-transform:uppercase;
     flex: 0 0 100%;
     font-weight: 700;
 }
-#thecommunity .joinSocial i{
+#community-links  .joinSocial i{
     text-align: center;
     flex: 0 0 100%;
     font-size: 72px;
     margin: 10px 0;
 }
-#thecommunity .joinSocial p{
+#community-links .joinSocial p{
     
     font-size: 16px;
     margin: 10px 0;
@@ -1161,7 +1139,7 @@ align-items: center;
     color:rgba(170, 170, 170, 0.893);
 }
 
-#thecommunity .joinSocial .blur{
+#community-links .joinSocial .blur{
    display: block;
    position: absolute;
    width: 100%;
@@ -1176,7 +1154,7 @@ align-items: center;
 }
 
 
-#thecommunity .joinSocial button{
+#community-links .joinSocial button{
     display: block;
     position: absolute;
     top: 90px;
@@ -1189,13 +1167,13 @@ align-items: center;
     font-weight: 700;
 }
 
-#thecommunity .joinSocial:hover{
+#community-links .joinSocial:hover{
 
     cursor: pointer;
     opacity: 1;
 }
 
-#thecommunity .joinSocial:hover button, .joinSocial:hover .blur{
+#community-links  .joinSocial:hover button, .joinSocial:hover .blur{
     display: block;
     background: #27fb6b;
     cursor: pointer;
@@ -1203,7 +1181,7 @@ align-items: center;
 
 }
 
-#thecommunity .joinSocial:hover .blur{
+#community-links .joinSocial:hover .blur{
     display: block;
     opacity: 1;
 

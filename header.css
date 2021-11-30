@@ -34,6 +34,7 @@
 header {
     display: flex; 
     align-items: stretch;
+    justify-content: space-between;
     position: fixed;
     z-index: 100;
     min-height: 50px;
@@ -90,12 +91,31 @@ header .headerSections {
 padding: 5px;
 }
 
+.headerSections a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #00b4d8;
+transition: 0.5s all;
+}
+
+.headerSections a:hover::after {
+
+   width: 100%;
+};
+
+
+
 header .headerSections a{
+    display: flex;
+    justify-content: center;
 padding: 5px;
+text-align: center;
 }
 
 header .headerSocials {
-    display: flex;
+    display: none;
     flex: 1 0 1%;
     justify-content: flex-end;
     align-items: center;
@@ -182,6 +202,10 @@ display: flex;
  height: 100%;
  flex-direction: column;
  justify-content: center;
+    }
+    header .headerSocials {
+        display: flex;
+
     }
 
     header #menubutton{
