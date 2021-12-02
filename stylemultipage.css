@@ -40,13 +40,17 @@ color: #00b4d8;
     background: transparent;
 }
 
+#linktree-icon {
+    display: none;
+}
+
 
 
 @media screen and (max-width: 500px) {
 
 
     #social-icons {
-        display: flex;
+        display: none;
         flex-wrap:wrap;
         flex-direction:row;
         align-items:center;
@@ -60,6 +64,20 @@ color: #00b4d8;
         background: transparent;
 
         box-sizing: border-box;
+    }
+    #linktree-icon {
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+         position:fixed;
+         bottom:20px;
+         right:20px;
+         z-index:98;
+          height: 50px;
+          width:50px;
+        background: transparent;
     }
 
 }
