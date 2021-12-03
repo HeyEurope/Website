@@ -1,3 +1,8 @@
+.section h2 {
+    width: 100%;
+    text-align: left;
+}
+
 #available-positions {
     display: flex;
     flex-wrap: wrap;
@@ -22,6 +27,9 @@ ul li h3{
     font-weight: 700;
 }
 
+
+
+
 #available-positions li h4{
     font-weight: 600;
     margin-bottom: 10px;
@@ -37,10 +45,21 @@ ul li h3{
     margin-right: 10px;
 }
 
+#faq {
+    display: flex;
+    justify-content: center;
+}
+
+#faq h2{
+    text-align: center;
+}
+
 #faq ul li{
 margin-bottom: 30px;
 }
 
 #faq ul li p {
     font-weight: 400;
+    width: 100%;
+    text-align: center;
 }
