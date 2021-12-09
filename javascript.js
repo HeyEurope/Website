@@ -23,13 +23,13 @@ const mobileMenu = document.getElementById("mobileMenu");
 let showMenu = false;
 
 let OpenMenu = () => {
-if(showMenu){
-    mobileMenu.style.display = "none" ;
-    showMenu = false;
-} else {
-    mobileMenu.style.display = "flex";
-showMenu = true;
-}
+    if (showMenu) {
+        mobileMenu.style.display = "none";
+        showMenu = false;
+    } else {
+        mobileMenu.style.display = "flex";
+        showMenu = true;
+    }
 }
 
 
@@ -91,10 +91,10 @@ window.addEventListener("load", () => {
 
 let setHeight = () => {
     if (window.innerWidth > 500) {
-        if(landingPage){
+        if (landingPage) {
             landingPage.style.minHeight = window.innerHeight + "px";
         }
-        
+
         for (let i = 0; i < sections.length; i++) {
             sections[i].style.minHeight = window.innerHeight + "px";
 
@@ -102,8 +102,8 @@ let setHeight = () => {
 
     } else {
         landingPage.style.minHeight = window.innerHeight + "px";
-        
-        if(landingPage){
+
+        if (landingPage) {
             landingPage.style.height = "auto";
         }
 
@@ -128,7 +128,7 @@ document.addEventListener("scroll", function () {
     if (window.innerWidth > 500) {
         if (window.scrollY > 10) {
             header.style.background = "#fafafa";
-            header.style.boxShadow = "0px 0px 50px 1px #000, -100px 0px 1000px 100px inset #00b4d80a, 100px 0px 1000px 100px inset #27fb6a0e";
+            header.style.boxShadow = "0px 0px 50px 1px #A1C5F7";
         } else {
             header.style.background = "transparent";
             header.style.boxShadow = "none";

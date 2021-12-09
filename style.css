@@ -46,8 +46,8 @@ button.slick-next, button.slick-prev {
 
     height: 50px;
     font-size: 25px;
-    color: #001c3a;
-    box-shadow: 0px 0px 20px 5px #001c3a;
+    color: var(--dark-blue);
+    box-shadow: 0px 0px 20px 5px var(--dark-blue);
     /* border: 2px solid #00b4d8; */
 }
 
@@ -106,7 +106,7 @@ body {
 
 body a {
 
-        color: #00b4d8;
+        color:var(--light-blue);
         background-color: transparent;
         text-decoration: none;
 
@@ -161,7 +161,7 @@ img{
     display: block;
     width: 100px;
     height: 3px;
-    background-color: #00b4d8;
+    background-color: var(--light-blue);
 }
 
 .box-overlay div ul{
@@ -201,9 +201,9 @@ justify-content: left;
     z-index: 10000;
     background-color: #fafafa;
 
-    box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e inset;
-    -webkit-box-shadow: -100px 0px 1000px 100px #00b4d80a  inset, 100px 0px 1000px 100px #27fb6a0e  inset;
-    -moz-box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e  inset;
+    box-shadow: -100px 0px 1000px 100px var(--ic-blue) inset, 100px 0px 1000px 100px var(--yellow) inset;
+    -webkit-box-shadow: -100px 0px 1000px 100px var(--ic-blue)  inset, 100px 0px 1000px 100px var(--yellow)  inset;
+    -moz-box-shadow: -100px 0px 1000px 100px var(--ic-blue) inset, 100px 0px 1000px 100px var(--yellow)  inset;
     
 
 
@@ -266,9 +266,10 @@ justify-content: left;
     flex-wrap: wrap;
     min-height: 600px;
     height: auto;
-    box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e inset;
-    -webkit-box-shadow: -100px 0px 1000px 100px #00b4d80a  inset, 100px 0px 1000px 100px #27fb6a0e  inset;
-    -moz-box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e  inset;
+    box-shadow: -100px 0px 1000px 100px var(--ic-blue) inset, 100px 0px 1000px 100px var(--yellow) inset;
+    -webkit-box-shadow: -100px 0px 1000px 100px var(--ic-blue)  inset, 100px 0px 1000px 100px var(--yellow)  inset;
+    -moz-box-shadow: -100px 0px 1000px 100px var(--ic-blue) inset, 100px 0px 1000px 100px var(--yellow)  inset;
+
     padding: 50px 0;
     box-sizing: border-box;
     /* width: 100%; */
@@ -297,19 +298,23 @@ justify-content: left;
     font-weight: 900;
     box-sizing: border-box;
     padding: 2.5rem 1.5rem;
+
+
+
 }
 
 .section h1::after {
     content: "";
     display: flex;
     width: 100%;
-    height: 10px;
+    height: 20px;
     background-color: var(--light-blue);
     position: relative;
     left:0px;
-    top:0px;
+    top: 0;
     margin: 15px 0;
     box-sizing: border-box;
+
 }
 
 .section h2 {
@@ -410,8 +415,9 @@ flex: 1 0 39%;
     background: -webkit-linear-gradient(270deg, rgba(17, 41, 107) 0%, rgba(0, 180, 216,1) 100%);
     background: linear-gradient(270deg, rgba(17, 41, 107,1) 0%, rgba(0, 180, 216,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#11296B",endColorstr="#00B4D8",GradientType=1); */
-    box-shadow: -100px 0px 1000px 100px inset #00b4d80a, 100px 0px 1000px 100px inset #27fb6a0e;
-    z-index: 10;
+    /* box-shadow: -100px 0px 1000px 100px inset var(--dark-blue), 100px 0px 1000px 100px inset var(--dark-blue);
+   */   
+    z-index: 10; 
     
 }
 
@@ -433,7 +439,7 @@ flex: 1 0 39%;
     /* height: 50%; */
     line-height: normal;
     /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
-  background: -webkit-linear-gradient(0deg,var(--yellow)  25%,  var(--dark-blue) 75%);
+  background: -webkit-linear-gradient(0deg,var(--dark-blue)  25%,  var(--dark-blue) 75%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -477,8 +483,8 @@ flex: 1 0 39%;
 }
 
 #landing-button1:hover, #landing-button2:hover {
-    color: #001c3a;
-    box-shadow: 0px 0px 20px 5px #001c3a;
+    color: var(--dark-blue);
+    box-shadow: 0px 0px 20px 5px var(--dark-blue);
 }
 
 .glow-on-hover {
@@ -499,7 +505,7 @@ flex: 1 0 39%;
 
 .glow-on-hover:before {
     content: '';
-    background: linear-gradient(90deg,  #00b4d8, #001c3a, #00b4d8, #001c3a, #00b4d8, #001c3a);
+    background: linear-gradient(90deg,  var(--light-blue),var(--dark-blue), var(--light-blue), var(--dark-blue), var(--light-blue), var(--dark-blue));
     position: absolute;
     top: -2px;
     left:-2px;
@@ -531,7 +537,7 @@ flex: 1 0 39%;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #001c3a;
+    background: var(--dark-blue);
     left: 0;
     top: 0;
     border-radius: 30px;
@@ -544,7 +550,7 @@ flex: 1 0 39%;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #001c3a;
+    background: var(--light-blue);
     left: 0;
     top: 0;
     border-radius: 30px;
@@ -619,7 +625,6 @@ align-items: center;
 #theproblem {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
 }
 
 
@@ -643,8 +648,8 @@ margin-bottom: 30px;
 padding: 20px;
 box-sizing: border-box;
 border-radius: 20px;
-border: 1px solid #001c3a;
-background: #001c3a;
+border: 1px solid var(--dark-blue);
+background: var(--dark-blue);
 color: #fafafa;
 }
 
@@ -677,7 +682,7 @@ color: #fafafa;
 #thegoal>h2 {
     padding: 0px 20px;
     font-weight: 700;
-    color:#00B4D8;
+    color:var(--light-blue);
 }
 
 
@@ -754,9 +759,9 @@ color: #fafafa;
 flex-wrap: wrap;
      padding: 20px;
      border-right: 1px solid #aaa;
-     background: #001c3aff;
+     background: var(--dark-blue);
      border-radius: 10px;
-     box-shadow: 0px 0px 40px 10px #00b4d823;
+     box-shadow: 0px 0px 40px 10px var(--light-blue);
     font-size: 18px;
     font-weight: 500;
     line-height: 1.5em;
@@ -1332,9 +1337,9 @@ footer {
     width: 100%;
     font-weight: 900;
     text-align: center;
-    color: #fafafaaa;
+
     box-shadow: 0px 0px 1000px 10px inset #00b4d823;
-    background: #001c3a;
+    background:var(--dark-blue);
     height: auto;
     overflow:hidden;
     z-index: -1;
@@ -1357,7 +1362,7 @@ flex-wrap: wrap;
 }
 
 footer> p {
-
+    color: var(--light-blue);
     padding: 10px;
 
 }

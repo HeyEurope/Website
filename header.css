@@ -57,6 +57,7 @@ header .headerLogo {
     display: flex;
     align-items: center;
     flex: 39%;
+    position: absolute;
     
 }
 
@@ -67,16 +68,16 @@ header img {
     height: 2em;
     width: auto;
     padding: 0 0;
-    padding: 0 10px;
+    padding: 0 0px;
 }
 
 header .headerLogo h1 {
     display: inline;
     font-weight: 900;
-    background: -webkit-linear-gradient(0deg, #001c3aff  0%,  #00b4d8 100%);
+    background: -webkit-linear-gradient(0deg, var(--dark-blue)  0%, var(--light-blue) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0px 0px 100px #27fb6a5e;
+  text-shadow: 0px 0px 100px var(--light-blue);
   line-height: 50px;
 }
 
@@ -86,7 +87,7 @@ header .headerSections {
     align-items:center;
     font-size: 16px;
     font-weight:700;
-    color:#001c3aff;
+    color:var(--dark-blue);
     flex-wrap: wrap;
 padding: 5px;
 }
