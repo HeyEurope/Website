@@ -599,10 +599,15 @@
 <script type="text/javascript">
 
     new TypeIt("#landing-typing", {
-        speed: 100,
+        speed: 80,
         loop: true,
 
-    }).type(" We are working to engage young Europeans with the European Union.")
+    }).type("We are your all-in-one source for all EU related content. \n")
+        .pause(1000)
+        .type(" \n Study, travel, volunteering, job opportunities...")
+        .pause(2000)
+        .delete()
+        .type(" We are working to engage young Europeans with the European Union.")
         .pause(2000)
         .delete()
         .type("We are a student-led non-profit project.")
