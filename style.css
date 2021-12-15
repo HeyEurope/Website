@@ -334,6 +334,7 @@ justify-content: left;
     font-weight: 500;
     font-size: 1.3rem;
     color: #fafafa;
+    z-index: 1;
 }
 
 .section p {
@@ -667,6 +668,20 @@ color: #fafafa;
     margin-top: 20px;
 }
 
+#our-goals-section li{
+    text-align: center;
+ display: flex;
+ justify-content: center;
+}
+
+#our-goals-section h2 {
+    margin: 75px 0;
+}
+
+.goal-ranks {
+    font-size: 8rem;
+    
+}
 
 
     
@@ -689,6 +704,7 @@ color: #fafafa;
 .opportunities-slide h3{
     color: var(--red);
     line-height: 5rem;
+    font-size: 4rem;
 }
 
 #goals-carousel {
@@ -851,19 +867,9 @@ flex-wrap: wrap;
 
 
 
-#whoweare {
-    
-}
 
 
-#whoweare #members-map {
-    display:flex;
 
-    max-width: 625px;
-    min-width:320px;
-    height:auto;
-    box-sizing: border-box;
-}
 
 
 
@@ -944,8 +950,8 @@ color: #001c3aaa;
     padding: 10px;
     border-radius: 10px;
     font-size: 25px;
-    color: #001c3aff;
-    background-color: #00b4d8;
+    color: var(--light-blue);
+    background-color: var(--dark-blue);
 }
 
 #theapp>ul {
@@ -1020,7 +1026,7 @@ align-items: center;
     font-size: 16px;
     margin: 10px 0;
     line-height: 1.5em;
-    color:#fafafa;
+    color:var(--light-blue);
 }
 
 #community-links .joinSocial .blur{
@@ -1044,7 +1050,7 @@ align-items: center;
     top: 90px;
     height: 50px;
     width: 80%;
-    background: #27fb6b;
+    background: var(--light-blue);
     margin: 10px 0;
     transition: 0.5s all;
     opacity: 0;
@@ -1059,7 +1065,7 @@ align-items: center;
 
 #community-links  .joinSocial:hover button, .joinSocial:hover .blur{
     display: block;
-    background: #27fb6b;
+    background: var(--light-blue);
     cursor: pointer;
     opacity: 1;
 
@@ -1263,7 +1269,6 @@ h2 {
     }
     #thegoal .slick-slide{
      
-        height: 400px;
         width: 250px;
      
     }

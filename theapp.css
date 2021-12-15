@@ -28,3 +28,14 @@ h1 {
     padding: 0 40px;
     box-sizing: border-box;
 }
+#educationbelief {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#educationbelief q {
+    box-sizing: border-box;
+    padding: 20px;
+}

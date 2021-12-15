@@ -37,7 +37,7 @@ header {
     justify-content: space-between;
     position: fixed;
     z-index: 100;
-    min-height: 50px;
+    min-height: 100px;
     height: auto;
     top: 0px;
     left: 0px;
@@ -191,7 +191,7 @@ display: flex;
 
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
 
 
     header .headerSections{
