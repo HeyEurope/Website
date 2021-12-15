@@ -133,13 +133,14 @@ header button {
     font-size: 15px;
     font-weight: 700;
     border: 2px solid #001c3aff;
+    color: var(--dark-blue);
 }
 header button:hover {
 
     height: 30px;
     font-size: 15px;
-    color: #00b4d8;
-    border: 2px solid #00b4d8;
+    color: var(--red);
+    border: 2px solid var(--red);
 }
 
 
