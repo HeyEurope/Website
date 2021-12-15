@@ -1,10 +1,19 @@
 #contacts {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-option {
 margin: 10px 0;
+width: 300px;
+}
+
+.contact-option a {
+    color: var(--dark-blue);
+    font-weight: 700;
+
 }
 
 
@@ -13,3 +22,7 @@ margin: 10px 0;
     width: 20px;
     }
     
+p {
+    justify-self: center;
+
+}

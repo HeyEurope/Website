@@ -34,9 +34,10 @@
 header {
     display: flex; 
     align-items: stretch;
+    justify-content: space-between;
     position: fixed;
     z-index: 100;
-    min-height: 50px;
+    min-height: 100px;
     height: auto;
     top: 0px;
     left: 0px;
@@ -56,6 +57,7 @@ header .headerLogo {
     display: flex;
     align-items: center;
     flex: 39%;
+    position: absolute;
     
 }
 
@@ -66,16 +68,16 @@ header img {
     height: 2em;
     width: auto;
     padding: 0 0;
-    padding: 0 10px;
+    padding: 0 0px;
 }
 
 header .headerLogo h1 {
     display: inline;
     font-weight: 900;
-    background: -webkit-linear-gradient(0deg, #001c3aff  0%,  #00b4d8 100%);
+    background: -webkit-linear-gradient(0deg, var(--dark-blue)  0%, var(--light-blue) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0px 0px 100px #27fb6a5e;
+  text-shadow: 0px 0px 100px var(--light-blue);
   line-height: 50px;
 }
 
@@ -85,17 +87,36 @@ header .headerSections {
     align-items:center;
     font-size: 16px;
     font-weight:700;
-    color:#001c3aff;
+    color:var(--dark-blue);
     flex-wrap: wrap;
 padding: 5px;
 }
 
+.headerSections a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #00b4d8;
+transition: 0.5s all;
+}
+
+.headerSections a:hover::after {
+
+   width: 100%;
+};
+
+
+
 header .headerSections a{
+    display: flex;
+    justify-content: center;
 padding: 5px;
+text-align: center;
 }
 
 header .headerSocials {
-    display: flex;
+    display: none;
     flex: 1 0 1%;
     justify-content: flex-end;
     align-items: center;
@@ -170,7 +191,7 @@ display: flex;
 
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 900px) {
 
 
     header .headerSections{
@@ -182,6 +203,10 @@ display: flex;
  height: 100%;
  flex-direction: column;
  justify-content: center;
+    }
+    header .headerSocials {
+        display: flex;
+
     }
 
     header #menubutton{

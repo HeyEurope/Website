@@ -10,10 +10,10 @@
     padding-left: 50px;
     background-color: #fafafa;
     box-sizing: border-box;
-    box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e inset;
+    /* box-shadow: -100px 0px 1000px 100px # inset, 100px 0px 1000px 100px #27fb6a0e inset;
     -webkit-box-shadow: -100px 0px 1000px 100px #00b4d80a  inset, 100px 0px 1000px 100px #27fb6a0e  inset;
     -moz-box-shadow: -100px 0px 1000px 100px #00b4d80a inset, 100px 0px 1000px 100px #27fb6a0e  inset;
-    
+     */
 
 
 }
@@ -21,7 +21,7 @@
 #banner-title h1 {
     font-weight: 900;
 font-size: 36px;
-color: #00b4d8;
+color: var(--dark-blue);
 }
 
 
@@ -40,13 +40,17 @@ color: #00b4d8;
     background: transparent;
 }
 
+#linktree-icon {
+    display: none;
+}
+
 
 
 @media screen and (max-width: 500px) {
 
 
     #social-icons {
-        display: flex;
+        display: none;
         flex-wrap:wrap;
         flex-direction:row;
         align-items:center;
@@ -60,6 +64,20 @@ color: #00b4d8;
         background: transparent;
 
         box-sizing: border-box;
+    }
+    #linktree-icon {
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+         position:fixed;
+         bottom:20px;
+         right:20px;
+         z-index:98;
+          height: 50px;
+          width:50px;
+        background: transparent;
     }
 
 }
