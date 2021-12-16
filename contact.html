@@ -266,14 +266,19 @@
 <script type="text/javascript">
 
 
+    try {
+        const header = document.querySelector("header");
 
-    const header = document.querySelector("header");
 
 
-    const loadingScreen = document.getElementById("loadingScreen");
 
-    const body = document.querySelector("body");
+        const loadingScreen = document.getElementById("loadingScreen");
 
+        const body = document.querySelector("body");
+
+    } catch {
+
+    };
 
 
     document.addEventListener('DOMContentLoaded', () => {

@@ -95,7 +95,7 @@
 
 
     </section>
-    <section class="section" id="theapp">
+    <section class="section" id="theapp" style="overflow-x: hidden;">
 
 
 
@@ -103,8 +103,26 @@
             empower
             young Europeans to engage with the European Union.
         </p>
-        <div class="white-space"></div>
-        <p>...app demo is coming soon...</p>
+
+        <div id="app-mockups" style="width:auto">
+
+            <div id="first-mockup">
+                <img src="app-mockup1.png" alt="">
+            </div>
+            <div id="second-mockup">
+                <img src="app-mockup2.png" alt="">
+            </div>
+            <div id="third-mockup">
+                <img src="app-mockup3.png" alt="">
+            </div>
+            <div id="fourth-mockup">
+                <img src="app-mockup4.png" alt="">
+            </div>
+
+
+
+
+        </div>
 
         <h2><br> The best part?</h2>
         <i class="fas fa-map-marker" style="font-size: 50px;"></i>
@@ -122,8 +140,8 @@
             <div>
                 <h3>I. Central Source</h3>
                 <p>Provide a
-                    <span style="color: #FFEA00">central</span>
-                    source of information about the <span style="color:#00B4D8">European Union</span>
+                    <span style="color: var(--yellow)">central</span>
+                    source of information about the <span style="color:var(--dark-blue)">European Union</span>
                     and our opportunities within it. Transparency is essential for trust.
                 </p>
                 <img src="central-source.svg" alt="">
@@ -153,8 +171,8 @@
             </div>
         </div>
 
-        <p style="flex: 0 0 100%;text-align:center;margin-top:40px;color:#555;font-size: 18px;">Our mobile platform
-            contributes to realising the European Youth Goals as part of the <a
+        <p style="flex: 0 0 100%;text-align:center;margin-top:40px;font-size: 18px;">Our mobile platform
+            contributes to realising the European Youth Goals as part of the <a style="color:var(--dark-blue)"
                 href="https://europa.eu/youth/strategy/european-youth-goals_en" ref="noreferrer" target="_blank">EU
                 Youth Strategy
                 2019-2027</a>.</p>
@@ -329,13 +347,19 @@
 <script type="text/javascript">
 
 
+    try {
+        const header = document.querySelector("header");
 
-    const header = document.querySelector("header");
 
 
-    const loadingScreen = document.getElementById("loadingScreen");
 
-    const body = document.querySelector("body");
+        const loadingScreen = document.getElementById("loadingScreen");
+
+        const body = document.querySelector("body");
+
+    } catch {
+
+    };
 
 
 

@@ -53,6 +53,11 @@ header {
    flex-wrap: wrap;
    
 }
+
+header>a {
+    display: flex;
+    align-items: center;
+}
 header .headerLogo {
     display: flex;
     align-items: center;
@@ -132,7 +137,7 @@ header button {
     min-width: none;
     font-size: 15px;
     font-weight: 700;
-    border: 2px solid #001c3aff;
+    border: 2px solid var(--dark-blue);
     color: var(--dark-blue);
 }
 header button:hover {
@@ -147,7 +152,7 @@ header button:hover {
 
 header .headerSocials a {
     text-decoration: none;
-    color: #001c3aff;
+    color: var(--dark-blue);
     margin-right: 15px;
     /* height: 60px;
     width: 60px;
@@ -163,7 +168,7 @@ header .headerSocials a:hover {
 
 header #menubutton{
     display: none;
-color: #00b4d8;
+color: var(--light-blue);
     padding-right: 10px;
     font-size: 900;
 }
@@ -216,7 +221,7 @@ display: flex;
 }
 
 @media screen and (max-width: 500px) {
-    body .section img {
+    body .section>img {
         width: 150px;
         height: auto;
     }

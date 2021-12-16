@@ -27,7 +27,9 @@ ul li h3{
     font-weight: 700;
 }
 
-
+#available-positions h3 {
+    color: var(--dark-blue);
+}
 
 
 #available-positions li h4{

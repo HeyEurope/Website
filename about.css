@@ -247,6 +247,11 @@ width:150px;
     height: auto;
 }
 
+#intro ul img {
+    max-width: 300px;
+}
+
+
 #intro li{
     display: flex;
     justify-content: center;

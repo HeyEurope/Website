@@ -1,3 +1,8 @@
+#theapp {
+    flex-wrap: nowrap;
+}
+
+
 .slick-dots {
     display: none;
     position: relative;
@@ -23,7 +28,11 @@
     flex-direction: column;
 }
 
-h1 {
+#theapp>ul img {
+    max-width: 300px;
+}
+
+#theapp h1 {
     display: block;
     padding: 0 40px;
     box-sizing: border-box;
