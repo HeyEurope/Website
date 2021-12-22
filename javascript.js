@@ -101,15 +101,21 @@ let setHeight = () => {
         }
 
     } else {
-        landingPage.style.minHeight = window.innerHeight + "px";
+        try {
 
-        if (landingPage) {
-            landingPage.style.height = "auto";
-        }
+            landingPage.style.minHeight = window.innerHeight + "px";
 
-        for (let i = 0; i < sections.length; i++) {
-            sections[i].style.minHeight = window.innerHeight / 2 + "px";
-            sections[i].style.height = "auto";
+            if (landingPage) {
+                landingPage.style.height = "auto";
+            }
+
+            for (let i = 0; i < sections.length; i++) {
+                sections[i].style.minHeight = window.innerHeight / 2 + "px";
+                sections[i].style.height = "auto";
+
+            }
+
+        } catch (error) {
 
         }
     }
