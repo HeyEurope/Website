@@ -173,7 +173,9 @@ overflow: hidden;
     
 }
 
-
+#member-section{
+    align-items: center;
+}
 
 .member-profiles{
     display: flex; 
@@ -315,12 +317,12 @@ width:150px;
     justify-content: center;
     flex: 1 1 300px;
     border-radius: 10px;
-    border: 1px solid #00b4d8;
+    border: 1px solid var(--light-blue);
     min-height: 300px;
     height: auto;
     margin:100px 25px 0 25px;
     padding: 30px;
-    box-shadow: 0px 0px 20px 1px #aaa;
+    box-shadow: 0px 0px 20px 1px #fafafa;
     line-height: 1.1em;
     color: #fafafa;
 }
@@ -433,4 +435,19 @@ width:150px;
     width: 100%;
     font-size: 15px;
 
+}
+
+@media screen and (max-width: 500px) {
+    #intro ul img {
+        max-width: 200px;
+    }
+    #wherenow .project-stages {
+        flex: 0 1 212px;
+    }
+    .project-stages img {
+        height: 80px;
+    }
+    .project-stages .project-image {
+        font-size: 20px;
+    }
 }

@@ -136,6 +136,7 @@ document.addEventListener("scroll", function () {
     } else {
         if (window.scrollY > 10) {
             header.style.background = "#fafafa";
+            header.style.boxShadow = "0px 0px 50px 1px #A1C5F7";
 
         } else {
             header.style.background = "#fafafa";
