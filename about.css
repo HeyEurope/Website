@@ -44,7 +44,7 @@ margin-right: 10px;
     display:flex;
 
     max-width: 625px;
-    min-width:320px;
+    min-width:250px;
     height:auto;
     box-sizing: border-box;
 }
@@ -285,13 +285,13 @@ width:150px;
 
 #intro li h3{
     margin-bottom: 80px;
-    font-size: 24px;
+    /* font-size: 24px; */
     font-weight: 600;
 }
 
 #intro li p {
     margin-top: 30px;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 1.5em;
 }
 
@@ -345,7 +345,7 @@ width:150px;
     flex: 0 0 100%;
     font-weight: 700;
     color: #fafafa;
-    font-size: 30px;
+    /* font-size: 30px; */
     padding-bottom: 30px;
     line-height: 1.3;
 }
@@ -415,7 +415,7 @@ width:150px;
     text-align:center;
     margin-top:40px;
     color:var(--dark-blue);
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 .project-stages a {
@@ -438,16 +438,96 @@ width:150px;
 }
 
 @media screen and (max-width: 500px) {
+#intro {
+    flex-direction: row;
+}
+
+    #intro li {
+        flex: 0 1 100px;
+    }
     #intro ul img {
-        max-width: 200px;
+        max-width: 100px;
     }
+
+#wherenow .layers {
+    justify-content: space-evenly;
+}
+
+#wherenow .layers>div:nth-last-child(1) {
+    margin-top: 0;
+}
+
+
+
+
+
+
+
     #wherenow .project-stages {
-        flex: 0 1 212px;
+        flex: 1 1 100px;
+        padding: 5px;
+        margin: 5px 5px;
     }
+.project-stages p {
+    padding: 0 0;
+}
+
     .project-stages img {
         height: 80px;
     }
     .project-stages .project-image {
         font-size: 20px;
     }
+
+    #member-section {
+        flex-direction: row;
+
+    }
+    
+.member-profiles{
+    display: flex; 
+    height: auto;
+    margin-bottom: 50px;
+    width: 150px;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+.member-profiles img{
+
+border-radius: 10px;
+margin-bottom: 20px;
+width:100px;
+}
+
+.member-profiles h4 {
+    font-weight: 900;
+    margin-top: 10px;
+    font-size: 1rem
+
+}
+
+.member-profiles h5 {
+    font-weight: 700;
+    margin: 5px 0;
+    color: var(--yellow);
+    font-size: 1rem;
+}
+
+
+.member-profiles p {
+    font-weight: 700;
+    margin: 5px 0;
+    font-size: 1rem;
+    padding: 0 0;
+}
+
+#wherenow {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
 }

@@ -118,7 +118,7 @@ body a {
 
 .section img{
     box-sizing: border-box;
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 
@@ -1045,7 +1045,7 @@ align-items: center;
 }
 #community-links .joinSocial p{
     
-    font-size: 16px;
+    /* font-size: 16px; */
     margin: 10px 0;
     line-height: 1.5em;
     color:var(--light-blue);
@@ -1172,7 +1172,7 @@ flex-wrap: wrap;
 footer> p {
     color: var(--light-blue);
     padding: 10px;
-
+box-sizing: border-box;
 }
 
 .footer-subpage-links {
@@ -1208,9 +1208,19 @@ justify-content: space-between;
 @media screen and (max-width: 500px) {
 
 
+    .section h1 {
+        font-size: 2rem;
+        height: 100px;
+        width: 100%;
+    }
 
-h2 {
-    font-size: 1.5rem;
+
+.section h2 {
+    font-size: 1.2rem;
+}
+
+.section p {
+    font-size: 1rem;
 }
     p {
         font-size: 16px;
@@ -1261,11 +1271,7 @@ h2 {
        
     }
 
-    .section h1 {
-        font-size: 30px;
-        height: 100px;
-        width: 100%;
-    }
+
     .landingPage {
         width:100%;
         padding: 50px 0%;
@@ -1306,18 +1312,21 @@ h2 {
         width: 300px;
     }
 
+    .goal-images {
+        position: absolute;
+        filter: opacity(0.2);
+        max-width: 250px;
+        z-index: 0;
+    }
+
     #intro .pillar {
         
         width: 70px;
         height: auto;
     }
-    #wherenow {
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
+
     #wherenow .project-stages{
 margin: 20px 0;
-padding: 10px;
     }
     .project-stages .project-image {
         font-size: 30px;
@@ -1332,8 +1341,9 @@ padding: 10px;
         justify-content: center;
     }
 
-    #thecommunity .joinSocial{
-
+    #community-links .joinSocial{
+flex: 0 1 150px;
+margin: 5px 5px;
     }
     #thecommunity .joinSocial h3{
         font-size: 20px;
@@ -1374,7 +1384,7 @@ padding: 10px;
 
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
     .section{
         overflow: hidden;
     }
