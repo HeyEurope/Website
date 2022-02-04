@@ -342,7 +342,7 @@ justify-content: left;
 }
 
 .section p {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.3rem;
     box-sizing: border-box;
     font-weight: 500;
     max-width: 500px;
@@ -1380,6 +1380,17 @@ margin: 5px 5px;
 
     .box-overlay {
         display: none;
+    }
+
+
+
+    #app-mockups img {
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        position: relative;
+        height: 300px;
+        border-radius: 20px;
     }
 
 }
