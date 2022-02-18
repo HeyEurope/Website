@@ -186,6 +186,9 @@ overflow: hidden;
     flex-wrap: wrap; 
     align-items: flex-start; 
     flex-direction: column;
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .member-profiles img{
@@ -205,7 +208,7 @@ width:150px;
 .member-profiles h5 {
     font-weight: 700;
     margin: 5px 0;
-    color: var(--yellow);
+    color: var(--dark-blue);
     font-size: 1.5rem;
 }
 
@@ -214,11 +217,12 @@ width:150px;
     margin: 5px 0;
     font-size: 16px;
     padding: 0 0;
+    color: var(--light-blue);
 }
 
 .member-profiles i {
     margin-right: 5px;
-    color: var(--dark-blue);
+    color: var(--light-blue);
 
 }
 
