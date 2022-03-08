@@ -202,7 +202,7 @@ width:150px;
     font-weight: 900;
     margin-top: 10px;
     font-size: 32px;
-
+    color: var(--dark-blue);
 }
 
 .member-profiles h5 {
